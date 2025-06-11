@@ -16,6 +16,139 @@ Il file `templates/index.json` definisce la struttura e i contenuti della homepa
 - ✅ Per personalizzare call-to-action
 - ✅ Per configurare banner promozionali
 
+# Shopify JSON Template - Guida alla Configurazione
+
+## Regole Fondamentali per ID e Blocchi
+
+### ID delle Sezioni
+- **Formato**: `tipo-sezione_codiceAlfanumerico`
+- **Esempi**: `rich_text_aaPkVq`, `multicolumn_FdtrqY`, `image_with_text_krqiTf`
+- **Codice**: 6 caratteri alfanumerici (a-z, A-Z, 0-9)
+- **Devono essere univoci** all'interno del file
+- Mantieni gli stessi id presenti nel tema di partenza
+
+### ID dei Blocchi
+- **Formato**: `tipo_codiceAlfanumerico`
+- **Esempi**: `heading_rTAc98`, `text_KH89Ug`, `button_W6PaJa`
+- **Codice**: 6 caratteri alfanumerici
+- **Devono essere univoci** all'interno della sezione
+- Mantieni gli stessi id presenti nel tema di partenza
+
+### Struttura Block Order
+```json
+"block_order": [
+  "heading_rTAc98",
+  "text_KH89Ug", 
+  "button_W6PaJa"
+]
+```
+Gli ID nel `block_order` devono corrispondere esattamente agli ID dei blocchi.
+
+## Regole per Tag HTML nei Campi Text
+
+### ❌ SENZA tag `<p>` (solo testo semplice):
+- **`image-banner`** → blocchi `text`
+- **Titoli** e **heading** (tutti i tipi)
+- **Button labels**
+- **Link labels**
+
+```json
+// ✅ Corretto per image-banner
+"text": "Scopri migliaia di articoli a prezzi imbattibili per ogni età e stagione."
+```
+
+### ✅ CON tag `<p>` obbligatori:
+- **`rich-text`** → blocchi `text`
+- **`multicolumn`** → blocchi `column` → campo `text`
+- **`image-with-text`** → blocchi `text`
+- **`newsletter`** → blocchi `paragraph`
+
+```json
+// ✅ Corretto per rich-text, multicolumn, image-with-text, newsletter
+"text": "<p>Dalle biciclette ai gonfiabili, dalla scuola al giardino: qualità e varietà per tutta la famiglia.</p>"
+```
+
+## Errori Comuni e Soluzioni
+
+### Errore: "Il tag p> non è consentito"
+**Causa**: Tag `<p>` usati in sezioni che non li supportano (es. `image-banner`)  
+**Soluzione**: Rimuovere i tag `<p>` e usare solo testo semplice
+
+### Errore: "Tutti i nodi di livello superiore devono essere tag p, ul, ol o h1-h6"
+**Causa**: Mancano i tag `<p>` in sezioni che li richiedono  
+**Soluzione**: Aggiungere i tag `<p>` ai campi text
+
+### Errore: "L'impostazione text non è valida"
+**Causa**: 
+- Tag HTML malformati (`<p>` senza chiusura `</p>`)
+- Caratteri speciali o encoding problematici
+- Virgolette tipografiche invece di ASCII
+
+**Soluzione**: 
+- Verificare che ogni `<p>` abbia la sua chiusura `</p>`
+- Usare virgolette ASCII standard `"` non `"` o `"`
+- Verificare encoding dei caratteri accentati
+
+## Proprietà Specifiche per Versioni Tema
+
+### Featured Collection
+```json
+// Proprietà che può variare tra temi
+"quick_add": "none"          // Temi nuovi
+"enable_quick_add": false    // Temi vecchi
+```
+
+### Riferimenti a Risorse
+```json
+// Devono esistere nello store Shopify
+"collection": "nome-collezione",
+"product": "handle-prodotto"
+```
+
+## Template JSON Valido di Base
+
+```json
+{
+  "sections": {
+    "sezione_abc123": {
+      "type": "tipo-sezione",
+      "blocks": {
+        "blocco_def456": {
+          "type": "tipo-blocco",
+          "settings": {
+            "setting": "valore"
+          }
+        }
+      },
+      "block_order": ["blocco_def456"],
+      "settings": {
+        "setting_sezione": "valore"
+      }
+    }
+  },
+  "order": ["sezione_abc123"]
+}
+```
+
+## Checklist Pre-Salvataggio
+
+- [ ] Tutti i blocchi hanno ID univoci nel formato corretto
+- [ ] `block_order` corrisponde agli ID dei blocchi
+- [ ] Tag `<p>` usati solo dove appropriato
+- [ ] Nessun tag HTML malformato
+- [ ] Virgolette ASCII standard
+- [ ] Collezioni e prodotti esistono nello store
+- [ ] JSON sintatticamente valido
+
+## Note per AI/Agenti
+
+- **Non assumere** quale formato HTML usare - verificare sempre il tipo di sezione
+- **Controllare sempre** la corrispondenza tra ID blocchi e block_order
+- **Generare ID univoci** casuali di 6 caratteri alfanumerici
+- **Testare la validità JSON** prima di fornire il codice
+- **Verificare encoding** dei caratteri speciali
+
+
 ## 📋 Struttura Base
 
 ```json
