@@ -17,14 +17,16 @@
     "buttons_shadow_opacity": 100,
     "buttons_shadow_horizontal_offset": 0,
     "buttons_shadow_vertical_offset": 2,
-    "buttons_shadow_blur": 4,
+    "buttons_shadow_blur": 5,
     "variant_pills_border_thickness": 1,
     "variant_pills_border_opacity": 100,
-    "variant_pills_radius": 50,
+    "variant_pills_radius": 40,
     "variant_pills_shadow_opacity": 100,
     "variant_pills_shadow_horizontal_offset": 0,
-    "variant_pills_shadow_vertical_offset": 1,
-    "variant_pills_shadow_blur": 3,
+    "variant_pills_shadow_vertical_offset": 2,
+    "variant_pills_shadow_blur": 5,
+
+
     "inputs_border_thickness": 1,
     "inputs_border_opacity": 100,
     "inputs_radius": 6,
@@ -41,8 +43,12 @@
     "card_corner_radius": 8,
     "card_shadow_opacity": 100,
     "card_shadow_horizontal_offset": 0,
-    "card_shadow_vertical_offset": 3,
-    "card_shadow_blur": 8,
+
+    "card_shadow_vertical_offset": 2,
+    "card_shadow_blur": 10,
+
+  
+
     "collection_card_style": "standard",
     "collection_card_image_padding": 0,
     "collection_card_text_alignment": "left",
@@ -78,20 +84,31 @@
     "media_shadow_opacity": 100,
     "media_shadow_horizontal_offset": 0,
     "media_shadow_vertical_offset": 6,
-    "media_shadow_blur": 12,
+
+    "media_shadow_blur": 10,
+
+   
+
     "popup_border_thickness": 1,
     "popup_border_opacity": 100,
     "popup_corner_radius": 8,
     "popup_shadow_opacity": 100,
     "popup_shadow_horizontal_offset": 0,
     "popup_shadow_vertical_offset": 6,
-    "popup_shadow_blur": 12,
+
+    "popup_shadow_blur": 10,
+
+  
+
     "drawer_border_thickness": 1,
     "drawer_border_opacity": 100,
     "drawer_shadow_opacity": 100,
     "drawer_shadow_horizontal_offset": 0,
     "drawer_shadow_vertical_offset": 6,
-    "drawer_shadow_blur": 12,
+
+    "drawer_shadow_blur": 10,
+
+
     "badge_position": "top left",
     "badge_corner_radius": 12,
     "sale_badge_color_scheme": "scheme-4",
