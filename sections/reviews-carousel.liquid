@@ -1,0 +1,173 @@
+{% schema %}
+{
+  "name": "Reviews Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "reviewer_name",
+          "label": "Reviewer Name",
+          "default": "John Doe"
+        },
+        {
+          "type": "text",
+          "id": "review_date",
+          "label": "Review Date",
+          "default": "01 Jan 2024"
+        },
+        {
+          "type": "text",
+          "id": "review_title",
+          "label": "Review Title",
+          "default": "Great Product!"
+        },
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review Text",
+          "default": "This is an amazing product. Highly recommend!"
+        },
+        {
+          "type": "image_picker",
+          "id": "reviewer_image",
+          "label": "Reviewer Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews Carousel",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="carousel" id="reviewCarousel">
+  <div class="carousel-inner">
+    {% for block in section.blocks %}
+      <div class="carousel-item{% if forloop.first %} active{% endif %}">
+        <div class="review-card">
+          <div class="reviewer-info">
+            <img src="{{ block.settings.reviewer_image | img_url: '200x50' }}" alt="Reviewer Image" class="reviewer-img">
+            <div>
+              <div class="reviewer-name">{{ block.settings.reviewer_name }}</div>
+              <div class="review-date">{{ block.settings.review_date }}</div>
+            </div>
+          </div>
+          <div class="review-title">{{ block.settings.review_title }}</div>
+          <div class="review-text">{{ block.settings.review_text }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <button class="carousel-control-prev" onclick="prevSlide()">&#10094;</button>
+  <button class="carousel-control-next" onclick="nextSlide()">&#10095;</button>
+</div>
+
+<script>
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const carouselInner = document.querySelector('.carousel-inner');
+    const totalItems = document.querySelectorAll('.carousel-item').length;
+
+    if (index >= totalItems) {
+      currentIndex = 0;
+    } else if (index < 0) {
+      currentIndex = totalItems - 1;
+    } else {
+      currentIndex = index;
+    }
+
+    const newTransform = -currentIndex * 100;
+    carouselInner.style.transform = `translateX(${newTransform}%)`;
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+
+  // Auto-slide functionality
+  setInterval(() => {
+    nextSlide();
+  }, 3000);
+</script>
+
+<style>
+  .carousel {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+  }
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+  }
+  .review-card {
+    padding: 20px;
+    width: 100%;
+  }
+  .reviewer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .reviewer-info img {
+    border-radius: 0%;
+    margin-bottom: 10px;
+    max-width: 200px;
+    max-height: 50px;
+  }
+  .review-date {
+    font-size: 12px;
+    color: #888;
+  }
+  .review-title {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .review-text {
+    font-size: 14px;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .carousel-control-prev {
+    left: 10px;
+  }
+  .carousel-control-next {
+    right: 10px;
+  }
+</style>

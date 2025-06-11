@@ -1,0 +1,90 @@
+{% comment %}
+  Sezione immagine avanzata con 20+ feature per Shopify
+  Autore: ChatGPT x Luca - 2025
+{% endcomment %}
+
+<section class="image-section image-section--{{ section.settings.image_size }}" style="background-color: {{ section.settings.bg_color }}; padding: {{ section.settings.padding_top | append: 'px' }} {{ section.settings.padding_horizontal | append: 'px' }} {{ section.settings.padding_bottom | append: 'px' }};">
+  {% comment %} MOBILE ONLY IMAGE {% endcomment %}
+  {% if section.settings.show_on_mobile %}
+    <img
+      src="{{ section.settings.image_mobile | default: section.settings.image | image_url: width: 1000 }}"
+      alt="{{ section.settings.alt_text | escape }}"
+      loading="lazy"
+      class="image-mobile"
+      style="width: 100%; height: auto; object-fit: {{ section.settings.object_fit }}; {% if section.settings.rounded %}border-radius: 20px;{% endif %} {% if section.settings.shadow %}box-shadow: 0 2px 15px rgba(0,0,0,0.2);{% endif %}"
+    >
+  {% endif %}
+
+  {% comment %} DESKTOP IMAGE {% endcomment %}
+  {% if section.settings.image and section.settings.show_on_desktop %}
+    <a href="{{ section.settings.image_link }}" {% if section.settings.track_clicks %}onclick="dataLayer.push({event: 'image_click', image_name: '{{ section.settings.image }}'});"{% endif %}>
+      <img
+        src="{{ section.settings.image | image_url: width: 1500 }}"
+        alt="{{ section.settings.alt_text | escape }}"
+        loading="lazy"
+        class="image-desktop"
+        style="width: 100%; height: auto; object-fit: {{ section.settings.object_fit }}; {% if section.settings.rounded %}border-radius: 20px;{% endif %} {% if section.settings.shadow %}box-shadow: 0 2px 15px rgba(0,0,0,0.2);{% endif %}"
+      >
+    </a>
+  {% endif %}
+
+  {% if section.settings.caption != blank %}
+    <div class="image-caption" style="text-align: {{ section.settings.caption_align }}; margin-top: 10px;">
+      {{ section.settings.caption }}
+    </div>
+  {% endif %}
+</section>
+
+<style>
+  @media screen and (min-width: 768px) {
+    .image-mobile { display: none !important; }
+  }
+  @media screen and (max-width: 767px) {
+    .image-desktop { display: none !important; }
+  }
+  .image-section--small img { max-width: 400px; margin: 0 auto; display: block; }
+  .image-section--medium img { max-width: 800px; margin: 0 auto; display: block; }
+  .image-section--large img { max-width: 100%; margin: 0 auto; display: block; }
+</style>
+
+{% schema %}
+{
+  "name": "Sezione Immagine Avanzata",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Immagine desktop" },
+    { "type": "image_picker", "id": "image_mobile", "label": "Immagine mobile (facoltativa - se vuota usa la desktop)" },
+    { "type": "text", "id": "alt_text", "label": "Testo alternativo" },
+    { "type": "url", "id": "image_link", "label": "Link dell'immagine" },
+    { "type": "checkbox", "id": "track_clicks", "label": "Traccia click con dataLayer" },
+    { "type": "select", "id": "object_fit", "label": "Adattamento immagine", "default": "contain", "options": [
+      { "value": "cover", "label": "Cover" },
+      { "value": "contain", "label": "Contain" }
+    ]},
+    { "type": "select", "id": "image_size", "label": "Dimensione immagine", "default": "large", "options": [
+      { "value": "small", "label": "Piccola" },
+      { "value": "medium", "label": "Media" },
+      { "value": "large", "label": "Larghezza intera" }
+    ]},
+    { "type": "color", "id": "bg_color", "label": "Colore sfondo", "default": "#ffffff" },
+    { "type": "richtext", "id": "caption", "label": "Didascalia" },
+    { "type": "select", "id": "caption_align", "label": "Allineamento didascalia", "default": "center", "options": [
+      { "value": "left", "label": "Sinistra" },
+      { "value": "center", "label": "Centro" },
+      { "value": "right", "label": "Destra" }
+    ]},
+    { "type": "checkbox", "id": "rounded", "label": "Bordi arrotondati" },
+    { "type": "checkbox", "id": "shadow", "label": "Ombra immagine" },
+    { "type": "checkbox", "id": "show_on_mobile", "label": "Mostra su mobile", "default": true },
+    { "type": "checkbox", "id": "show_on_desktop", "label": "Mostra su desktop", "default": true },
+    { "type": "range", "id": "padding_top", "label": "Spazio sopra", "min": 0, "max": 100, "step": 5, "default": 40 },
+    { "type": "range", "id": "padding_bottom", "label": "Spazio sotto", "min": 0, "max": 100, "step": 5, "default": 40 },
+    { "type": "range", "id": "padding_horizontal", "label": "Spazio orizzontale", "min": 0, "max": 50, "step": 5, "default": 0 }
+  ],
+  "presets": [
+    {
+      "name": "Immagine con opzioni avanzate",
+      "category": "Immagini"
+    }
+  ]
+}
+{% endschema %}

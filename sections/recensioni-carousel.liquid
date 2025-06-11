@@ -1,0 +1,225 @@
+{% schema %}
+{
+  "name": "Carosello Recensioni",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo",
+      "default": "RECENSIONI DA GOOGLE"
+    },
+    {
+      "type": "select",
+      "id": "star_style",
+      "label": "Stile delle stelle",
+      "default": "google",
+      "options": [
+        { "value": "google", "label": "Stelle Google (dorate)" },
+        { "value": "trustpilot", "label": "Stelle Trustpilot (SVG)" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "label": "Dimensione stelle (px)",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Recensione",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Nome del recensore"
+        },
+        {
+          "type": "select",
+          "id": "stars",
+          "label": "Numero di stelle",
+          "default": "5",
+          "options": [
+            { "value": "5", "label": "★★★★★" },
+            { "value": "4", "label": "★★★★" },
+            { "value": "3", "label": "★★★" },
+            { "value": "2", "label": "★★" },
+            { "value": "1", "label": "★" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Data",
+          "default": "01/01/2025"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Recensione"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carosello Recensioni",
+      "category": "Testimonianze"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="carousel" id="reviewCarousel">
+  <h2 style="text-align: center;">{{ section.settings.title }}</h2>
+  <div class="carousel-inner">
+    <div class="carousel-track">
+      {% for block in section.blocks %}
+        <div class="carousel-item">
+          <div class="review-card">
+            <div class="reviewer-info">
+              <h2 class="reviewer-name">{{ block.settings.name }}</h2>
+              <div class="review-stars" style="font-size: {{ section.settings.star_size }}px;">
+                {% if section.settings.star_style == 'google' %}
+                  <span class="star-text">
+                    {% case block.settings.stars %}
+                      {% when '5' %}★★★★★
+                      {% when '4' %}★★★★
+                      {% when '3' %}★★★
+                      {% when '2' %}★★
+                      {% when '1' %}★
+                    {% endcase %}
+                  </span>
+                {% else %}
+                  {% assign stars_count = block.settings.stars | plus: 0 %}
+                  {% for i in (1..stars_count) %}
+                    <img src="{{ '1 stella trustpilot.svg' | asset_url }}" alt="stella Trustpilot" class="star-icon" style="width: {{ section.settings.star_size }}px;" />
+                  {% endfor %}
+                {% endif %}
+              </div>
+              <span class="review-date">{{ block.settings.date }}</span>
+            </div>
+            <p class="review-text">
+              {{ block.settings.text }}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" onclick="prevSlide()">&#10094;</button>
+  <button class="carousel-control-next" onclick="nextSlide()">&#10095;</button>
+</div>
+
+<style>
+  .carousel {
+    width: 90%;
+    max-width: 700px;
+    overflow: hidden;
+    position: relative;
+    margin: 40px auto;
+    border-radius: 0px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    background: white;
+    border: 1px solid #eee;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .review-stars {
+    color: #FFD700;
+    line-height: 1;
+  }
+
+  .star-text {
+    letter-spacing: 0;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  .star-icon {
+    height: auto;
+    display: inline-block;
+    margin-right: 0px;
+    vertical-align: middle;
+  }
+
+  .review-date {
+    color: #888;
+    display: block;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .carousel-control-prev { left: 10px; }
+  .carousel-control-next { right: 10px; }
+</style>
+
+<script>
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const track = document.querySelector('#reviewCarousel .carousel-track');
+    const items = document.querySelectorAll('#reviewCarousel .carousel-item');
+    const total = items.length;
+
+    if (index >= total) currentIndex = 0;
+    else if (index < 0) currentIndex = total - 1;
+    else currentIndex = index;
+
+    const offset = -currentIndex * 100;
+    track.style.transform = `translateX(${offset}%)`;
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+
+  setInterval(nextSlide, 4000);
+</script>

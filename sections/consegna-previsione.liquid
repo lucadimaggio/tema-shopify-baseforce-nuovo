@@ -1,0 +1,45 @@
+{% schema %}
+{
+  "name": "Previsione consegna",
+  "settings": [
+    {
+      "type": "text",
+      "id": "pre_text",
+      "label": "Testo prima delle date",
+      "default": "Ordinando ora, <br> riceverai il tuo ordine tra il"
+    },
+    {
+      "type": "number",
+      "id": "min_days",
+      "label": "Giorni minimi di consegna",
+      "default": 15
+    },
+    {
+      "type": "number",
+      "id": "max_days",
+      "label": "Giorni massimi di consegna",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Previsione consegna",
+      "category": "Informazioni"
+    }
+  ]
+}
+{% endschema %}
+
+{% assign current_date = "now" | date: "%s" %}
+{% assign min_seconds_to_add = section.settings.min_days | times: 86400 %}
+{% assign max_seconds_to_add = section.settings.max_days | times: 86400 %}
+
+{% assign min_future_timestamp = current_date | plus: min_seconds_to_add %}
+{% assign max_future_timestamp = current_date | plus: max_seconds_to_add %}
+
+{% assign min_future_date = min_future_timestamp | date: "%d-%m-%Y" %}
+{% assign max_future_date = max_future_timestamp | date: "%d-%m-%Y" %}
+
+<p style="border-radius: 8px; border:1px solid #222222;padding: 10px; text-align: center;">
+  {{ section.settings.pre_text }} <b>{{ min_future_date }}</b> e il <b>{{ max_future_date }}</b>!
+</p>

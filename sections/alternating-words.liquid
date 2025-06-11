@@ -1,0 +1,78 @@
+{% schema %}
+{
+  "name": "Alternating Words",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_text",
+      "label": "Testo principale",
+      "default": "Il sapore dello zucchero, senza"
+    },
+    {
+      "type": "text",
+      "id": "word1",
+      "label": "Parola 1",
+      "default": "retrogusto amaro"
+    },
+    {
+      "type": "text",
+      "id": "word2",
+      "label": "Parola 2",
+      "default": "calorie"
+    },
+    {
+      "type": "text",
+      "id": "word3",
+      "label": "Parola 3",
+      "default": "sensi di colpa"
+    },
+    {
+      "type": "number",
+      "id": "interval",
+      "label": "Intervallo in secondi",
+      "default": 3
+    }
+  ],
+  "presets": [
+    {
+      "name": "Alternating Words",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}
+
+<div id="sugar-text">
+  <h2>{{ settings.main_text }}</h2>
+  {{ settings.main_text }} <span id="alternating-words"></span>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("JavaScript is working");
+
+    var mainText = '{{ settings.main_text }}';
+    var words = [
+      '{{ settings.word1 }}',
+      '{{ settings.word2 }}',
+      '{{ settings.word3 }}'
+    ].
+    // Debug logs
+    console.log("Main Text: ", mainText);
+    console.log("Words: ", words);
+
+    var index = 0;
+    var element = document.getElementById('alternating-words');
+    var interval = {{ settings.interval | times: 1000 }};
+    console.log("Interval: ", interval);
+
+    function changeWord() {
+      console.log("Changing word to: ", words[index]);
+      element.textContent = words[index];
+      index = (index + 1) % words.length;
+    }
+
+    changeWord(); // Initial call
+    setInterval(changeWord, interval); // Change based on the interval
+  });
+</script>

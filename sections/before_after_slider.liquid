@@ -1,0 +1,133 @@
+{% schema %}
+{
+  "name": "Before and After Slider",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "before_image",
+      "label": "Before Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "after_image",
+      "label": "After Image"
+    },
+    {
+      "type": "color",
+      "id": "slider_color",
+      "label": "Slider Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "slider_background_color",
+      "label": "Slider Background Color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Before and After Slider"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="before_after_slider">
+  <div class="before_image" style="background-image: url('{{ section.settings.before_image | img_url: '1024x' }}');">
+    &nbsp;
+  </div>
+  <div class="after_image" style="background-image: url('{{ section.settings.after_image | img_url: '1024x' }}');">
+    &nbsp;
+  </div>
+  <div class="slider_container" style="background-color: {{ section.settings.slider_background_color }};">
+    <input type="range" min="0" max="100" value="50" class="slider" style="background: {{ section.settings.slider_color }};">
+  </div>
+</div>
+
+<style>
+.before_after_slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 400px;
+  overflow: hidden;
+}
+
+.before_after_slider .before_image,
+.before_after_slider .after_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 30px); /* Spazio per il cursore */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: clip-path 0.2s ease; /* transizione più veloce */
+}
+
+.before_after_slider .before_image {
+  z-index: 1;
+  clip-path: inset(0);
+}
+
+.before_after_slider .after_image {
+  z-index: 2;
+  clip-path: inset(0 50% 0 0);
+}
+
+.before_after_slider .slider_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Altezza della sezione del cursore */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.before_after_slider .slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1px;
+  width: 80%;
+  background: {{ section.settings.slider_color }};
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.before_after_slider .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px; /* Riduce la larghezza del thumb */
+  height: 20px; /* Riduce l'altezza del thumb */
+  background: {{ section.settings.slider_color }};
+  border: 1px solid {{ section.settings.slider_color }};
+  cursor: pointer;
+}
+
+.before_after_slider .slider::-moz-range-thumb {
+  width: 10px; /* Riduce la larghezza del thumb */
+  height: 20px; /* Riduce l'altezza del thumb */
+  background: {{ section.settings.slider_color }};
+  border: 1px solid {{ section.settings.slider_color }};
+  cursor: pointer;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var slider = document.querySelector('.before_after_slider .slider');
+  var afterImage = document.querySelector('.before_after_slider .after_image');
+
+  slider.addEventListener('input', function () {
+    var sliderValue = slider.value;
+    afterImage.style.clipPath = 'inset(0 ' + (100 - sliderValue) + '% 0 0)';
+  });
+
+  // Imposta larghezza iniziale
+  afterImage.style.clipPath = 'inset(0 50% 0 0)';
+});
+</script>
