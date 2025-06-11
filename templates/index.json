@@ -1,1 +1,403 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Posizionamento o cosa vende il negozio","heading_size":"h2"}},"text_ghLyNQ":{"type":"text","settings":{"text":"<strong>Beneficio principale<\/strong>","text_style":"body"}},"button":{"type":"buttons","settings":{"button_label_1":"Scopri le collezioni","button_link_1":"shopify:\/\/collections","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","text_ghLyNQ","button"],"settings":{"image_overlay_opacity":30,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-1","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"custom_liquid_QAWQkd":{"type":"custom-liquid","disabled":true,"settings":{"custom_liquid":"<br>","color_scheme":"","padding_top":0,"padding_bottom":0}},"rich_text_aaPkVq":{"type":"rich-text","blocks":{"heading_rTAc98":{"type":"heading","settings":{"heading":"Beneficio principale","heading_size":"h2"}},"text_KH89Ug":{"type":"text","settings":{"text":"<p>Descrizione beneficio<\/p>"}}},"block_order":["heading_rTAc98","text_KH89Ug"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-3","full_width":true,"padding_top":40,"padding_bottom":52}},"featured_collection":{"type":"featured-collection","settings":{"title":"Collezione","heading_size":"h2","description":"<p>Descrizione collezione<\/p>","show_description":false,"description_style":"body","collection":"nuova-collezione-gioielli-addicted2","products_to_show":8,"columns_desktop":4,"full_width":true,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"scheme-2","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":44,"padding_bottom":36}},"image_with_text_krqiTf":{"type":"image-with-text","blocks":{"heading_W6PaJa":{"type":"heading","settings":{"heading":"Storia azienda","heading_size":"h2"}},"text_6hVQej":{"type":"text","settings":{"text":"<p>Inserisci informazioni che aumentino l'autorità dell'azienda e, se possibile, che dimostrino che c'è anche una passione dietro.<\/p>","text_style":"body"}}},"block_order":["heading_W6PaJa","text_6hVQej"],"settings":{"height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-1","color_scheme":"scheme-1","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"featured_collection_inWCHi":{"type":"featured-collection","settings":{"title":"Collezione","heading_size":"h2","description":"<p>Descrizione collezione<\/p>","show_description":false,"description_style":"body","collection":"collane-donna","products_to_show":8,"columns_desktop":4,"full_width":true,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"scheme-3","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":44,"padding_bottom":36}},"multicolumn_FdtrqY":{"type":"multicolumn","blocks":{"column_TEFRnN":{"type":"column","settings":{"title":"Beneficio","text":"<p>Descrizione beneficio<\/p>","link_label":"","link":""}},"column_LNknPi":{"type":"column","settings":{"title":"Beneficio","text":"<p>Descrizione beneficio<\/p>","link_label":"","link":""}},"column_zcGzXY":{"type":"column","settings":{"title":"Beneficio","text":"<p>Descrizione beneficio<\/p>","link_label":"","link":""}}},"block_order":["column_TEFRnN","column_LNknPi","column_zcGzXY"],"settings":{"title":"Perché sceglierci","heading_size":"h2","image_width":"third","image_ratio":"adapt","columns_desktop":3,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-2","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"featured_collection_yrqqm9":{"type":"featured-collection","settings":{"title":"Collezione","heading_size":"h2","description":"<p>Descrizione collezione<\/p>","show_description":false,"description_style":"body","collection":"anelli","products_to_show":8,"columns_desktop":4,"full_width":true,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":44,"padding_bottom":36}},"image_with_text_CUHcJf":{"type":"image-with-text","blocks":{"heading_VVk9gg":{"type":"heading","settings":{"heading":"Beneficio","heading_size":"h2"}},"text_Kkgyee":{"type":"text","settings":{"text":"<p>Descrizione beneficio<\/p>","text_style":"body"}}},"block_order":["heading_VVk9gg","text_Kkgyee"],"settings":{"height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-3","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"featured_product_CtwXHB":{"type":"featured-product","blocks":{"title_WjErfq":{"type":"title","settings":{"heading_size":"h1"}},"price_GqnYBb":{"type":"price","settings":{}},"variant_picker_r7DmdR":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector_gfqady":{"type":"quantity_selector","settings":{}},"buy_buttons_VXAXKe":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"icon_with_text_PYbtB3":{"type":"icon-with-text","settings":{"layout":"vertical","icon_1":"check_mark","heading_1":"Assistenza pre e post acquisto","icon_2":"heart","heading_2":"Fatto a mano in Italia","icon_3":"truck","heading_3":"Spedizione in tutto il mondo"}}},"block_order":["title_WjErfq","price_GqnYBb","variant_picker_r7DmdR","quantity_selector_gfqady","buy_buttons_VXAXKe","icon_with_text_PYbtB3"],"settings":{"product":"addicted-bracciale-in-forma-di-serpente-eltanin","color_scheme":"scheme-2","secondary_background":false,"media_size":"medium","constrain_to_viewport":true,"media_fit":"contain","media_position":"left","image_zoom":"hover","hide_variants":false,"enable_video_looping":false,"padding_top":36,"padding_bottom":36}},"custom_liquid_gfijdL":{"type":"custom-liquid","settings":{"custom_liquid":"<style> body {overflow-x: hidden;}<\/style>","color_scheme":"","padding_top":0,"padding_bottom":0}}},"order":["image_banner","custom_liquid_QAWQkd","rich_text_aaPkVq","featured_collection","image_with_text_krqiTf","featured_collection_inWCHi","multicolumn_FdtrqY","featured_collection_yrqqm9","image_with_text_CUHcJf","featured_product_CtwXHB","custom_liquid_gfijdL"]}
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "30 anni di giochi, divertimento e avventure",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Scopri migliaia di articoli a prezzi imbattibili per ogni età e stagione.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Scopri di più",
+            "button_link_1": "/collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tutto quello che cerchi, in un solo posto",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dalle biciclette ai gonfiabili, dalla scuola al giardino: qualità e varietà per tutta la famiglia.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_estate": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Pronti per l’estate?",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "gonfiabili-e-piscine",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_history": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dal 1995, al fianco delle famiglie",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Siamo nati con l’idea di rendere il gioco accessibile e di qualità. Oggi serviamo tutta Europa, con passione e precisione.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_bikes": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Biciclette per tutte le età",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "biciclette",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_why": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Consegne rapide",
+            "text": "<p>Spediamo in tutta Europa dal nostro centro dedicato.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Prezzi imbattibili",
+            "text": "<p>Da sempre competitivi su ogni articolo.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Esperienza e precisione",
+            "text": "<p>30 anni di storia e un team dedicato al cliente.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "Perché sceglierci",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_brands": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "I nostri giocattoli di marca",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "giocattoli-di-marca",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_support": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Assistenza concreta, senza fronzoli",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Siamo a disposizione prima e dopo l’acquisto, con un servizio clienti vero, rapido e diretto.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product": {
+      "type": "featured-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "icon_with_text": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "check_mark",
+            "heading_1": "Assistenza pre e post acquisto",
+            "icon_2": "heart",
+            "heading_2": "Fatto a mano in Italia",
+            "icon_3": "truck",
+            "heading_3": "Spedizione in tutto il mondo"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "icon_with_text"
+      ],
+      "settings": {
+        "product": "bicicletta-bambino-rossa",
+        "color_scheme": "scheme-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Iscriviti alla Newsletter",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Ricevi offerte esclusive e novità</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form"
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text",
+    "featured_collection_estate",
+    "image_with_text_history",
+    "featured_collection_bikes",
+    "multicolumn_why",
+    "featured_collection_brands",
+    "image_with_text_support",
+    "featured_product",
+    "newsletter"
+  ]
+}
