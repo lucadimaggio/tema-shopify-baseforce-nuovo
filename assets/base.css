@@ -3298,7 +3298,88 @@ details-disclosure > details {
   }
 }
 
-/* Element Hovers: Vertical Lift, 3d Lift */
+/* Element Hovers: Bounce, Glow Effect, Scale, Wobble, Vertical Lift, 3d Lift */
+
+/* Nuove animazioni personalizzate compatibili Dawn */
+
+/* 3D Lift Enhanced */
+.animate--hover-3d-lift .card-wrapper:hover .card--card,
+.animate--hover-3d-lift .card-wrapper:hover .card--standard .card__inner {
+  transform: translateY(-0.5rem) rotateX(3deg) rotateY(-2deg);
+  box-shadow: 
+    0 0.8rem 1.6rem rgba(var(--color-shadow), 0.15),
+    0 0.3rem 0.6rem rgba(var(--color-shadow), 0.08);
+  transition: transform var(--duration-medium) var(--ease-out-slow), 
+              box-shadow var(--duration-medium) var(--ease-out-slow);
+}
+
+/* Bounce Animation */
+.animate--hover-bounce .card-wrapper:hover .card--card,
+.animate--hover-bounce .card-wrapper:hover .card--standard .card__inner {
+  animation: bounceUp 0.6s ease-out;
+}
+
+@keyframes bounceUp {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-1rem); }
+  50% { transform: translateY(-0.5rem); }
+  75% { transform: translateY(-0.75rem); }
+  100% { transform: translateY(-0.75rem); }
+}
+
+/* Glow Effect */
+.animate--hover-glow .card-wrapper:hover .card--card,
+.animate--hover-glow .card-wrapper:hover .card--standard .card__inner {
+  transform: translateY(-0.75rem);
+  box-shadow: 
+    0 0.8rem 1.6rem rgba(var(--color-shadow), 0.15),
+    0 0 1.5rem rgba(var(--color-button), 0.4),
+    0 0 3rem rgba(var(--color-button), 0.2);
+  transition: transform var(--duration-medium) var(--ease-out-slow),
+              box-shadow var(--duration-medium) var(--ease-out-slow);
+}
+
+/* Scale Effect */
+.animate--hover-scale .card-wrapper:hover .card--card,
+.animate--hover-scale .card-wrapper:hover .card--standard .card__inner {
+  transform: translateY(-0.75rem) scale(1.05);
+  box-shadow: 0 1rem 2rem rgba(var(--color-shadow), 0.2);
+  transition: transform var(--duration-medium) var(--ease-out-slow),
+              box-shadow var(--duration-medium) var(--ease-out-slow);
+}
+
+/* Wobble Effect */
+.animate--hover-wobble .card-wrapper:hover .card--card,
+.animate--hover-wobble .card-wrapper:hover .card--standard .card__inner {
+  transform: translateY(-0.75rem);
+  animation: wobbleEffect 0.8s ease-out;
+}
+
+@keyframes wobbleEffect {
+  0% { transform: translateY(-0.75rem) rotate(0deg); }
+  15% { transform: translateY(-0.75rem) rotate(-2deg); }
+  30% { transform: translateY(-0.75rem) rotate(2deg); }
+  45% { transform: translateY(-0.75rem) rotate(-1deg); }
+  60% { transform: translateY(-0.75rem) rotate(1deg); }
+  75% { transform: translateY(-0.75rem) rotate(-0.5deg); }
+  100% { transform: translateY(-0.75rem) rotate(0deg); }
+}
+
+/* Supporto per pulsanti */
+.animate--hover-bounce .button:not(.button--tertiary):not([disabled]):hover,
+.animate--hover-glow .button:not(.button--tertiary):not([disabled]):hover,
+.animate--hover-scale .button:not(.button--tertiary):not([disabled]):hover,
+.animate--hover-wobble .button:not(.button--tertiary):not([disabled]):hover {
+  transform: translateY(-0.25rem);
+  transition: transform var(--duration-default) var(--ease-out-slow);
+}
+
+.animate--hover-3d-lift .button:not(.button--tertiary):not([disabled]):hover {
+  transform: translateY(-0.25rem) rotateX(3deg);
+  box-shadow: 0 0.8rem 1.6rem rgba(var(--color-shadow), 0.15);
+  transition: transform var(--duration-default) var(--ease-out-slow),
+              box-shadow var(--duration-default) var(--ease-out-slow);
+}
 
 @media (prefers-reduced-motion: no-preference) and (hover: hover) {
   .animate--hover-3d-lift .card-wrapper .card--card,
@@ -3566,3 +3647,4 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
