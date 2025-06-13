@@ -1086,6 +1086,49 @@ Il file `templates/product.json` definisce la struttura e i contenuti delle pagi
 - `content_layout`: "no-overlap", "overlap"
 - `background_style`: "none", "primary"
 
+### Animazioni
+Il tema prevede due impostazioni globali per le animazioni, definite nella sezione “Animations” di config/settings_schema.json.
+
+animations_reveal_on_scroll
+Attiva l’effetto di comparsa graduale degli elementi quando vengono visualizzati durante lo scroll della pagina. Valori possibili: true (impostazione predefinita) oppure false.
+
+animations_hover_elements
+Seleziona l’effetto hover applicato a card, pulsanti e altri componenti. Le opzioni disponibili sono:
+
+default – nessuna animazione speciale (impostazione base del tema);
+
+vertical-lift – solleva l’elemento in verticale;
+
+3d-lift – applica uno spostamento con leggera rotazione 3D (“3D Lift Enhanced” in assets/base.css);
+
+bounce – effetto rimbalzo;
+
+glow – bagliore intorno all’elemento;
+
+scale – leggera espansione;
+
+wobble – piccola oscillazione.
+
+L’impostazione predefinita nel file settings_data.json è vertical-lift:
+
+\"animations_reveal_on_scroll\": true,
+\"animations_hover_elements\": \"vertical-lift\"
+
+Le possibili opzioni sono elencate in settings_schema.json:
+
+\"id\": \"animations_hover_elements\",
+\"options\": [
+  { \"value\": \"default\" },
+  { \"value\": \"vertical-lift\" },
+  { \"value\": \"3d-lift\" },
+  { \"value\": \"bounce\" },
+  { \"value\": \"glow\" },
+  { \"value\": \"scale\" },
+  { \"value\": \"wobble\" }
+]
+
+Con queste impostazioni puoi controllare se gli elementi appaiono gradualmente quando scorrono e quale animazione viene applicata al passaggio del mouse.
+
 ## 💡 Best Practices
 
 1. **Conversioni**: Posiziona elementi di trust sopra il pulsante acquista
