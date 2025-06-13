@@ -225,6 +225,22 @@
           {
             "value": "3d-lift",
             "label": "t:settings_schema.animations.settings.animations_hover_elements.options__3.label"
+          },
+          {
+            "value": "bounce",
+            "label": "Bounce"
+          },
+          {
+            "value": "glow",
+            "label": "Glow effect"
+          },
+          {
+            "value": "scale",
+            "label": "Scale"
+          },
+          {
+            "value": "wobble",
+            "label": "Wobble"
           }
         ],
         "default": "default",
@@ -233,6 +249,7 @@
       }
     ]
   },
+
   {
     "name": "t:settings_schema.buttons.name",
     "settings": [
