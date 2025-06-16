@@ -1147,3 +1147,46 @@ Con queste impostazioni puoi controllare se gli elementi appaiono gradualmente q
 - **Accessibilità**: Assicurati che i contrasti siano sufficienti
 - **Performance**: Ottimizza immagini e contenuti per velocità caricamento
 - **Coerenza**: qualora ti venga esplicitamente richiesto di creare una nuova sezione, ricordati di utilizzare le stesse impostazioni di stile già impostate nel tema
+
+
+# 📏 Multipli accettati per campi numerici di `settings_data.json` (Shopify Dawn Theme)
+
+| Campo                          | Tipo     | Multiplo richiesto |
+|-------------------------------|----------|---------------------|
+| `body_scale`                  | integer  | 5                   |
+| `buttons_border_opacity`      | integer  | 10                  |
+| `buttons_border_thickness`    | integer  | 1                   |
+| `buttons_radius`              | integer  | 2                   |
+| `buttons_shadow_blur`         | integer  | 5                   |
+| `buttons_shadow_horizontal_offset` | integer  | 1              |
+| `buttons_shadow_opacity`      | integer  | 10                  |
+| `buttons_shadow_vertical_offset` | integer  | 1               |
+| `card_border_opacity`         | integer  | 10                  |
+| `card_border_thickness`       | integer  | 1                   |
+| `card_corner_radius`          | integer  | 2                   |
+| `card_image_padding`          | integer  | 4                   |
+| `card_shadow_blur`            | integer  | 5                   |
+| `card_shadow_horizontal_offset` | integer | 1                  |
+| `card_shadow_opacity`         | integer  | 10                  |
+| `card_shadow_vertical_offset` | integer  | 1                   |
+| `heading_scale`               | integer  | 5                   |
+| `inputs_border_opacity`       | integer  | 10                  |
+| `inputs_border_thickness`     | integer  | 1                   |
+| `inputs_radius`               | integer  | 2                   |
+| `inputs_shadow_blur`          | integer  | 5                   |
+| `inputs_shadow_horizontal_offset` | integer | 1                |
+| `inputs_shadow_opacity`       | integer  | 10                  |
+| `inputs_shadow_vertical_offset` | integer  | 1                  |
+| `logo_width`                  | integer  | 1                   |
+| `page_width`                  | integer  | 100                 |
+| `spacing_grid_horizontal`     | integer  | 4                   |
+| `spacing_grid_vertical`       | integer  | 4                   |
+| `spacing_sections`            | integer  | 10                  |
+| `variant_pills_border_opacity`| integer  | 10                  |
+| `variant_pills_border_thickness` | integer | 1                |
+| `variant_pills_radius`        | integer  | 2                   |
+| `variant_pills_shadow_blur`   | integer  | 5                   |
+| `variant_pills_shadow_horizontal_offset` | integer | 1        |
+| `variant_pills_shadow_opacity`| integer  | 10                  |
+| `variant_pills_shadow_vertical_offset` | integer | 1          |
+
