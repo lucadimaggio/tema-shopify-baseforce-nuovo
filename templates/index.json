@@ -2,39 +2,8 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "30 anni di giochi, divertimento e avventure",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Scopri migliaia di articoli a prezzi imbattibili per ogni età e stagione.",
-            "text_style": "body"
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Scopri di più",
-            "button_link_1": "/collections/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "buttons"
-      ],
       "settings": {
+        "image": "shopify://shop_images/hero-banner.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -44,7 +13,13 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "heading": "Coltivazione indoor, outdoor e articoli da fumatore",
+        "heading_size": "h0",
+        "text": "30 anni di esperienza al servizio della tua passione green",
+        "button_label": "Scopri i nostri prodotti",
+        "button_link": "/collections/all",
+        "button_style_secondary": false
       }
     },
     "rich_text": {
@@ -53,21 +28,29 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Tutto quello che cerchi, in un solo posto",
-            "heading_size": "h2"
+            "heading": "Tutto quello che ti serve, in un solo Growshop",
+            "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Dalle biciclette ai gonfiabili, dalla scuola al giardino: qualità e varietà per tutta la famiglia.</p>"
+            "text": "<p>Dai semi da collezione ai migliori articoli da fumatore: selezioniamo solo prodotti top di gamma testati da veri appassionati.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -77,22 +60,22 @@
         "padding_bottom": 52
       }
     },
-    "featured_collection_estate": {
+    "featured_collection_seeds": {
       "type": "featured-collection",
       "settings": {
-        "title": "Pronti per l’estate?",
+        "title": "Semi da collezione",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "gonfiabili-e-piscine",
+        "collection": "semi-da-collezione",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -105,59 +88,64 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_history": {
+    "image_with_text_story": {
       "type": "image-with-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Dal 1995, al fianco delle famiglie",
+            "heading": "Dal 1994, pionieri del growshop in Italia",
             "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Siamo nati con l’idea di rendere il gioco accessibile e di qualità. Oggi serviamo tutta Europa, con passione e precisione.</p>",
+            "text": "<p>Karkadè nasce dalla passione di chi ha vissuto il settore fin dalle origini. Siamo stati tra i primi in Italia a credere nel mondo grow, e oggi continuiamo a farlo con la stessa energia di ieri.</p>",
             "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
+        "image": "shopify://shop_images/installation.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-3",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "featured_collection_bikes": {
+    "featured_collection_smoking": {
       "type": "featured-collection",
       "settings": {
-        "title": "Biciclette per tutte le età",
+        "title": "Articoli per fumatori",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "biciclette",
+        "collection": "articoli-per-fumatori",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -170,14 +158,14 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_why": {
+    "multicolumn_values": {
       "type": "multicolumn",
       "blocks": {
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Consegne rapide",
-            "text": "<p>Spediamo in tutta Europa dal nostro centro dedicato.</p>",
+            "title": "Esperienza autentica",
+            "text": "<p>Da oltre 30 anni al servizio dei grower italiani.</p>",
             "link_label": "",
             "link": ""
           }
@@ -185,8 +173,8 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Prezzi imbattibili",
-            "text": "<p>Da sempre competitivi su ogni articolo.</p>",
+            "title": "Presenza alle fiere",
+            "text": "<p>Abbiamo collaborato con i migliori brand e partecipato a tutte le fiere di settore.</p>",
             "link_label": "",
             "link": ""
           }
@@ -194,20 +182,16 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Esperienza e precisione",
-            "text": "<p>30 anni di storia e un team dedicato al cliente.</p>",
+            "title": "Distributori esclusivi Roor",
+            "text": "<p>Primi rivenditori italiani dello storico brand tedesco.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
+      "block_order": ["column1", "column2", "column3"],
       "settings": {
-        "title": "Perché sceglierci",
+        "title": "Perché scegliere Karkadè",
         "heading_size": "h2",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -216,29 +200,29 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "featured_collection_brands": {
+    "featured_collection_care": {
       "type": "featured-collection",
       "settings": {
-        "title": "I nostri giocattoli di marca",
+        "title": "Cura delle piante",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "giocattoli-di-marca",
+        "collection": "cura-delle-piante",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -251,37 +235,42 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_support": {
+    "image_with_text_selected": {
       "type": "image-with-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Assistenza concreta, senza fronzoli",
+            "heading": "Prodotti selezionati da veri esperti del settore",
             "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Siamo a disposizione prima e dopo l’acquisto, con un servizio clienti vero, rapido e diretto.</p>",
+            "text": "<p>Non vendiamo solo: testiamo, conosciamo e consigliamo. Ogni articolo è scelto per garantire efficienza, qualità e affidabilità.</p>",
             "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
-      "block_order": [
-        "heading",
-        "text"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
+        "image": "shopify://shop_images/installation.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-3",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -332,17 +321,10 @@
           }
         }
       },
-      "block_order": [
-        "title",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "icon_with_text"
-      ],
+      "block_order": ["title", "price", "variant_picker", "quantity_selector", "buy_buttons", "icon_with_text"],
       "settings": {
-        "product": "bicicletta-bambino-rossa",
-        "color_scheme": "scheme-1",
+        "product": "grinder-pro-edition",
+        "color_scheme": "scheme-2",
         "secondary_background": false,
         "media_size": "medium",
         "constrain_to_viewport": true,
@@ -354,50 +336,17 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "newsletter": {
-      "type": "newsletter",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Iscriviti alla Newsletter",
-            "heading_size": "h1"
-          }
-        },
-        "paragraph": {
-          "type": "paragraph",
-          "settings": {
-            "text": "Ricevi offerte esclusive e novità"
-          }
-        },
-        "email_form": {
-          "type": "email_form"
-        }
-      },
-      "block_order": [
-        "heading",
-        "paragraph",
-        "email_form"
-      ],
-      "settings": {
-        "color_scheme": "scheme-3",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "image_banner",
     "rich_text",
-    "featured_collection_estate",
-    "image_with_text_history",
-    "featured_collection_bikes",
-    "multicolumn_why",
-    "featured_collection_brands",
-    "image_with_text_support",
-    "featured_product",
-    "newsletter"
+    "featured_collection_seeds",
+    "image_with_text_story",
+    "featured_collection_smoking",
+    "multicolumn_values",
+    "featured_collection_care",
+    "image_with_text_selected",
+    "featured_product"
   ]
 }
