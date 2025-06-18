@@ -9,15 +9,15 @@
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false,
-        "heading": "Coltivazione indoor, outdoor e articoli da fumatore",
+        "heading": "Moda mare Positano in 100 % Lino Made in Italy",
         "heading_size": "h0",
-        "text": "30 anni di esperienza al servizio della tua passione green",
-        "button_label": "Scopri i nostri prodotti",
+        "text": "Fresco, leggero e artigianale: il tuo alleato di stile sotto il sole",
+        "button_label": "Scopri prodotti",
         "button_link": "/collections/all",
         "button_style_secondary": false
       }
@@ -28,14 +28,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Tutto quello che ti serve, in un solo Growshop",
+            "heading": "Traspirabilità e comfort senza paragoni",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Dai semi da collezione ai migliori articoli da fumatore: selezioniamo solo prodotti top di gamma testati da veri appassionati.</p>"
+            "text": "<p>Le nostre collezioni in lino garantiscono freschezza e leggerezza tutto il giorno, anche sotto il sole di Positano.</p>"
           }
         },
         "button": {
@@ -54,7 +54,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -63,12 +63,12 @@
     "featured_collection_seeds": {
       "type": "featured-collection",
       "settings": {
-        "title": "Semi da collezione",
+        "title": "Scopri la Collezione Ricamo Positano",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "semi-da-collezione",
+        "collection": "ricamo-positano",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -94,14 +94,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Dal 1994, pionieri del growshop in Italia",
+            "heading": "Dal cuore di Positano dal 2018",
             "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Karkadè nasce dalla passione di chi ha vissuto il settore fin dalle origini. Siamo stati tra i primi in Italia a credere nel mondo grow, e oggi continuiamo a farlo con la stessa energia di ieri.</p>",
+            "text": "<p>Casa Mastro nasce dall’amore per il lino e la tradizione artigiana, per creare capi unici che celebrano la bellezza della Costiera Amalfitana.</p>",
             "text_style": "body"
           }
         },
@@ -133,12 +133,12 @@
     "featured_collection_smoking": {
       "type": "featured-collection",
       "settings": {
-        "title": "Articoli per fumatori",
+        "title": "Camicie Uomo – Linea Easy-Care",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "articoli-per-fumatori",
+        "collection": "camicie-uomo-easy-care",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -164,8 +164,8 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Esperienza autentica",
-            "text": "<p>Da oltre 30 anni al servizio dei grower italiani.</p>",
+            "title": "Stile Unico",
+            "text": "<p>Design esclusivi realizzati a mano</p>",
             "link_label": "",
             "link": ""
           }
@@ -173,8 +173,8 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Presenza alle fiere",
-            "text": "<p>Abbiamo collaborato con i migliori brand e partecipato a tutte le fiere di settore.</p>",
+            "title": "Lino Made in Italy",
+            "text": "<p>Fibra naturale coltivata e lavorata in Italia</p>",
             "link_label": "",
             "link": ""
           }
@@ -182,8 +182,8 @@
         "column3": {
           "type": "column",
           "settings": {
-            "title": "Distributori esclusivi Roor",
-            "text": "<p>Primi rivenditori italiani dello storico brand tedesco.</p>",
+            "title": "Durabilità",
+            "text": "<p>Capi resistenti e durevoli nel tempo</p>",
             "link_label": "",
             "link": ""
           }
@@ -191,7 +191,7 @@
       },
       "block_order": ["column1", "column2", "column3"],
       "settings": {
-        "title": "Perché scegliere Karkadè",
+        "title": "Perché sceglierci",
         "heading_size": "h2",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -210,19 +210,19 @@
     "featured_collection_care": {
       "type": "featured-collection",
       "settings": {
-        "title": "Cura delle piante",
+        "title": "Collezione Pizzo Cuori",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "cura-delle-piante",
+        "collection": "pizzo-cuori",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -241,14 +241,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Prodotti selezionati da veri esperti del settore",
+            "heading": "Eleganza naturale",
             "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Non vendiamo solo: testiamo, conosciamo e consigliamo. Ogni articolo è scelto per garantire efficienza, qualità e affidabilità.</p>",
+            "text": "<p>I nostri capi uniscono la leggerezza del lino alla raffinatezza del pizzo, per uno stile senza tempo.</p>",
             "text_style": "body"
           }
         },
@@ -323,7 +323,7 @@
       },
       "block_order": ["title", "price", "variant_picker", "quantity_selector", "buy_buttons", "icon_with_text"],
       "settings": {
-        "product": "grinder-pro-edition",
+        "product": "camicia-con-ricamo-positano",
         "color_scheme": "scheme-2",
         "secondary_background": false,
         "media_size": "medium",
