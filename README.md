@@ -1190,5 +1190,7 @@ Con queste impostazioni puoi controllare se gli elementi appaiono gradualmente q
 | `variant_pills_shadow_opacity`| integer  | 10                  |
 | `variant_pills_shadow_vertical_offset` | integer | 1          |
 | `media_shadow_blur` | integer | 5          |
+| `popup_shadow_blur` | integer | 5          |
+| `drawer_shadow_blur` | integer | 5          |
 
 
