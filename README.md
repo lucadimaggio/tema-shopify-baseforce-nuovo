@@ -1176,7 +1176,7 @@ Con queste impostazioni puoi controllare se gli elementi appaiono gradualmente q
 | `inputs_shadow_blur`          | integer  | 5                   |
 | `inputs_shadow_horizontal_offset` | integer | 1                |
 | `inputs_shadow_opacity`       | integer  | 10                  |
-| `inputs_shadow_vertical_offset` | integer  | 1                  |
+| `inputs_shadow_vertical_offset` | integer  | 2                  |
 | `logo_width`                  | integer  | 1                   |
 | `page_width`                  | integer  | 100                 |
 | `spacing_grid_horizontal`     | integer  | 4                   |
