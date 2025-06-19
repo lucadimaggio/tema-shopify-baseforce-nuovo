@@ -1,1 +1,544 @@
+<<<<<<< HEAD
 {"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"custom_liquid_7AtNTX":{"type":"custom_liquid","name":"Codice stelline recensioni","settings":{"custom_liquid":"{% assign scheme = settings.color_scheme_1 %}\n\n<div class=\"trustpilot-badge\" style=\"\n  --color-background: {{ scheme.background }};\n  --color-foreground: {{ scheme.text }};\n  --color-accent: {{ scheme.accent }};\n\">\n  <div class=\"trustpilot-stars\">★★★★★<\/div>\n  <a href=\"#reviewCarousel\" class=\"read-reviews-link\">Leggi le recensioni di Google<\/a>\n<\/div>\n\n<style>\n  .trustpilot-badge {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    margin-top: 4px;\n    flex-wrap: wrap;\n    font-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};\n    font-weight: {{ settings.type_body_font.weight }};\n  }\n  \n  .trustpilot-stars {\n    font-size: 20px;\n    color: #FFD700; \/* oro universale per le stelle *\/\n    line-height: 1;\n  }\n  \n  .read-reviews-link {\n    font-size: 14px;\n    color: rgb(var(--color-foreground));\n    text-decoration: underline;\n    cursor: pointer;\n    transition: all 0.2s ease;\n    font-family: inherit;\n  }\n  \n  .read-reviews-link:hover {\n    color: rgb(var(--color-accent));\n    opacity: 0.8;\n  }\n  \n  \/* Responsive *\/\n  @media (max-width: 600px) {\n    .trustpilot-badge {\n      flex-direction: column;\n      align-items: flex-start;\n      gap: 4px;\n    }\n    .trustpilot-stars {\n      font-size: 18px;\n    }\n    .read-reviews-link {\n      font-size: 13px;\n    }\n  }\n  \n  \/* Scroll smooth globale *\/\n  html {\n    scroll-behavior: smooth;\n  }\n  \n  \/* Integrazione con header Shopify *\/\n  .trustpilot-badge {\n    margin: 0;\n    padding: 4px 0;\n  }\n<\/style>"}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"custom_liquid_D8xxCw":{"type":"custom_liquid","name":"Codice calcolo spedizione gratuita","settings":{"custom_liquid":"{% assign free_shipping_threshold = 15000 %} <!-- Soglia di spedizione gratuita in centesimi -->\n{% assign cart_total = cart.total_price %} <!-- Totale del carrello -->\n{% assign product_price = product.price %} <!-- Prezzo del prodotto visualizzato -->\n\n<!-- Calcolo del totale combinato -->\n{% assign combined_total = cart_total | plus: product_price %}\n\n<!-- Controllo del totale combinato rispetto alla soglia -->\n{% if combined_total < free_shipping_threshold %}\n{% assign amount_needed = free_shipping_threshold | minus: combined_total %}\n<p style=\"font-size: 13px; display: inline;\">\n Aggiungi altri <b>{{ amount_needed | money }}<\/b> per la spedizione gratuita!\n<\/p>\n{% else %}\n<p style=\"display: inline;\">\nHai diritto alla spedizione gratuita!\n<\/p>\n{% endif %}"}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"delivery_estimate_78YMXV":{"type":"delivery_estimate","disabled":true,"settings":{"pre_text":"Ordinando ora,  riceverai il tuo ordine tra il","min_days":15,"max_days":20}},"custom_liquid_UntiJ9":{"type":"custom_liquid","name":"Codice previsione consegna","settings":{"custom_liquid":"{% assign current_date = \"now\" | date: \"%s\" %}\n{% assign current_day = \"now\" | date: \"%A\" %}\n{% assign min_days_to_add = 2 %}\n{% assign max_days_to_add = 6 %}\n{% if current_day == \"Friday\" %}\n  {% assign min_days_to_add = 4 %}\n  {% assign max_days_to_add = 8 %}\n{% elsif current_day == \"Saturday\" %}\n  {% assign min_days_to_add = 3 %}\n  {% assign max_days_to_add = 7 %}\n{% elsif current_day == \"Sunday\" %}\n  {% assign min_days_to_add = 2 %}\n  {% assign max_days_to_add = 6 %}\n{% elsif current_day == \"Monday\" %}\n  {% assign min_days_to_add = 2 %}\n  {% assign max_days_to_add = 8 %}\n{% elsif current_day == \"Tuesday\" %}\n  {% assign min_days_to_add = 2 %}\n  {% assign max_days_to_add = 8 %}\n{% elsif current_day == \"Wednesday\" %}\n  {% assign min_days_to_add = 2 %}\n  {% assign max_days_to_add = 8 %}\n{% elsif current_day == \"Thursday\" %}\n  {% assign min_days_to_add = 5 %}\n  {% assign max_days_to_add = 8 %}\n{% endif %}\n{% assign min_seconds_to_add = min_days_to_add | times: 86400 %}\n{% assign max_seconds_to_add = max_days_to_add | times: 86400 %}\n{% assign min_future_timestamp = current_date | plus: min_seconds_to_add %}\n{% assign max_future_timestamp = current_date | plus: max_seconds_to_add %}\n{% assign min_future_date = min_future_timestamp | date: \"%d-%m-%Y\" %}\n{% assign max_future_date = max_future_timestamp | date: \"%d-%m-%Y\" %}\n\n<p style=\"\n  color: {{ settings.color_schemes['scheme-1'].settings.text }}\n\n;\n  border-radius: {{ settings.text_boxes_radius }}px;\n  border: 1px solid {{ settings.color_schemes['scheme-1'].settings.text }};\n  border-opacity: {{ settings.text_boxes_border_opacity }}%;\n  padding: 10px;\n  text-align: center;\n  box-shadow: {{ settings.text_boxes_shadow_horizontal_offset }}px {{ settings.text_boxes_shadow_vertical_offset }}px {{ settings.text_boxes_shadow_blur }}px rgba({{ settings.colors_shadow | color_extract: 'red' }}, {{ settings.colors_shadow | color_extract: 'green' }}, {{ settings.colors_shadow | color_extract: 'blue' }}, {{ settings.text_boxes_shadow_opacity | divided_by: 100.0 }});\n\">\n  Ordinando ora, <br> riceverai il tuo ordine tra il <b>{{ min_future_date }}<\/b> e il <b>{{ max_future_date }}<\/b>!\n<\/p>"}},"description":{"type":"description","disabled":true,"settings":{}},"share":{"type":"share","disabled":true,"settings":{"share_label":"Share"}}},"block_order":["vendor","title","custom_liquid_7AtNTX","price","variant_picker","quantity_selector","custom_liquid_D8xxCw","buy_buttons","delivery_estimate_78YMXV","custom_liquid_UntiJ9","description","share"],"settings":{"enable_sticky_info":true,"color_scheme":"scheme-1","media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"stacked","media_position":"left","image_zoom":"lightbox","mobile_thumbnails":"hide","hide_variants":true,"enable_video_looping":false,"padding_top":36,"padding_bottom":12}},"custom_liquid_fWpVR4":{"type":"custom-liquid","name":"Codice descrizione comprimibile","settings":{"custom_liquid":"<!-- Descrizione prodotto collapsible -->\n<div class=\"descrizione-collapsible\">\n    <div class=\"descrizione-header\">\n        <span class=\"icon\">+<\/span>\n        <span class=\"header-text\">Clicca per leggere la descrizione completa<\/span>\n    <\/div>\n    <div class=\"descrizione-content\">\n        <div class=\"descrizione-inner\">\n            {{ product.description | replace: '<img', '<img style=\"max-width: 100%;\"' }}\n        <\/div>\n    <\/div>\n<\/div>\n\n<style>\n    .descrizione-collapsible {\n        width: 100%;\n        max-width: 1300px;\n        margin: 0 auto;\n        padding: 0 20px;\n        box-sizing: border-box;\n    }\n\n    .descrizione-header {\n        padding: 15px;\n        cursor: pointer;\n        display: flex;\n        align-items: center;\n        border: 1px solid #ddd;\n        border-radius: {{ settings.text_boxes_radius }}px !important;\n    }\n\n    .descrizione-header .icon {\n        margin-right: 10px;\n    }\n\n    .descrizione-content {\n        display: none;\n        overflow: hidden;\n        transition: max-height 0.3s ease-out;\n    }\n\n    .descrizione-inner {\n        font-family: Arial, sans-serif;\n        font-size: 14px;\n        color: #555;\n        background-color: transparent;\n        padding: 15px;\n    }\n\n    @media screen and (max-width: 600px) {\n        .descrizione-collapsible {\n            width: auto !important;\n            padding: 0 10px !important;\n        }\n\n        img {\n            max-width: 100% !important;\n            height: auto !important;\n        }\n    }\n<\/style>\n\n<script>\n    document.addEventListener('DOMContentLoaded', function() {\n        document.querySelectorAll('.descrizione-header').forEach(function(header) {\n            var content = header.nextElementSibling;\n            var icon = header.querySelector('.icon');\n            var headerText = header.querySelector('.header-text');\n\n            header.addEventListener('click', function() {\n                var isVisible = content.style.display === \"block\";\n                content.style.display = isVisible ? \"none\" : \"block\";\n                headerText.textContent = isVisible\n                    ? \"Clicca per leggere la descrizione completa\"\n                    : \"Clicca per nascondere la descrizione\";\n                icon.textContent = isVisible ? \"+\" : \"-\";\n            });\n        });\n    });\n<\/script>","color_scheme":"","padding_top":40,"padding_bottom":52}},"text_with_icons_CH9Pqb":{"type":"text-with-icons","blocks":{"block_hJ3GEz":{"type":"block","settings":{"icon":"heart","text":"Gli articoli più ricercati, da tutto il mondo","link":""}},"block_WBbhGC":{"type":"block","settings":{"icon":"shipping_outline","text":"Spedizione in 1-4 giorni lavorativi","link":""}},"block_zHFjnA":{"type":"block","settings":{"icon":"messages","text":"Assistenza in chat 24\/7","link":""}},"block_Kd4xCE":{"type":"block","settings":{"icon":"secure","text":"Pagamenti tracciati e sicuri","link":""}}},"block_order":["block_hJ3GEz","block_WBbhGC","block_zHFjnA","block_Kd4xCE"],"disabled":true,"settings":{"color":"","background":"","section_space":"top_and_bottom"}},"custom_liquid_ePnbeh":{"type":"custom-liquid","name":"Codice carosello recensioni","settings":{"custom_liquid":"{% assign scheme = settings.color_scheme_1 %}\n\n<h2 style=\"text-align: center; color: rgb({{ scheme.text }}); font-family: var(--font-heading-family); font-size: {{ settings.type_header_font_size }}px;\">Recensioni di Google<\/h2>\n<p style=\"text-align: center; font-size: {{ settings.type_body_font_size }}px; color: rgba({{ scheme.text }}, 0.6); margin-top: 5px;\">4,8\/5 ★★★★★ (72 recensioni)<\/p>\n\n<div class=\"carousel\" id=\"reviewCarousel\" style=\"\n  --color-background: {{ scheme.background }};\n  --color-foreground: {{ scheme.text }};\n  --color-accent: {{ scheme.accent }};\n\">\n  <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;<\/button>\n  <div class=\"carousel-inner\">\n    <!-- Inizio recensioni -->\n    <div class=\"carousel-track\">\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Shabana Lakdawala<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">1 mese fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            This store has such thoughtfully created clothing. Beautiful linen pieces designed and made it Italy. We're so thankful we stopped by and are taking back several unique items. And many thanks to Esther who made our shopping experience so special.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Gloria Kim<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">1 mese fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Highly recommended!!! Unlike the other clothing stores in Positano, this store has a lot of exotic and unique pieces! I found 5-6 great pieces in this store, which definitely made my day!\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Joe<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">4 settimane fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Great clothing! Perfect fit and high fashion. If you love linen clothing made locally this is the place. Highly recommended if you're staying in Positano and traveling back to the USA. You'll look amazing!\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Nadir A<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">9 mesi fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Highly recommend shopping from this shop and making your Positano trip a memorable one, really good quality stuff, I missed out on a jacket...I will try to go back there to get it. Ester was really helpful in showing different designs.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Emily Hernandez<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">3 settimane fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Absolutely gorgeous and very lovely ladies!! A GREAT store for authentic Italian linen\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Alexa Reghenzani<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">2 anni fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Amazing shop with everything designed by a local father-daughter team. Clothes for men, women, & children. Ivan was super helpful & styled me. They also offer hemming of pants\/dresses if needed.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Julie<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">10 mesi fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Love this store! Lots to choose from. Very stylish clothes and Esther and the rest of the staff were great! Esther was a joy, a fun person, and helped me find an outfit I love! And the dress I purchased was made in Positano.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Mary Taylor Wagner<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">un anno fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Excellent quality clothes\/dresses, the store also offers tailoring and staff is very helpful and kind.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Vittorio Cobalto<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">11 mesi fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Casa Mastro Moda è la boutique di Positano per eccellenza. La selezione di abiti e accessori è straordinaria, soprattutto le camicie.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Giacoma Cusimano<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">11 mesi fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            This is a must shop store while in Positano and not a tourist trap. The clothing is handmade by the owner. Her sister helps in the shop and helped us. Not pushy at all and showed me all the ways to wear the outfit I purchased.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Tom H<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">3 settimane fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Beautiful handmade clothes, excellent service\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Jessi Berrin<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">un anno fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Ivan was spectacular! We purchased the most beautiful scarf. Absolutely in love with the design, fabric, and texture. Thank you so much for your hospitality. We will return on our next trip to Positano.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Lucia Ferrara<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">2 anni fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            One of my favourite shops in POSITANO, Excellent clothes hand made and with natural fabrics. I bought many dresses in linen and lace, one dress with lemon embroidered and a man shirt.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Bryce A. Denton<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">un anno fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Great service and clothes. Tailored some pants for my wife in no time at all. Just know that there are no returns, only exchanges. Not a complaint just a heads up for future shoppers.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Jacquelyn D<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">2 anni fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Amazing staff and store ! They helped me pick out an outfit and found one for my boyfriend who wasn't there. They tailored my pants and delivered it to my hotel same day! Very friendly service, amazing people.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Jeanine Kinzie<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">2 anni fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Very kind man running this shop! The fabrics and quality are amazing and very special. They look dimensional and have many layers of color to make them look unique.\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n  <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;<\/button>\n  \n  <!-- Controlli mobile -->\n  <div class=\"carousel-controls\">\n    <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;<\/button>\n    <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;<\/button>\n  <\/div>\n<\/div>\n\n<style>\n@media (max-width: 768px) {\n  .carousel {\n   width: 90% !important;\n  }\n}\n  .carousel {\n    width: 90%;\n    max-width: 700px;\n    overflow: hidden;\n    position: relative;\n    margin: 40px auto;\n    border-radius: {{ settings.text_boxes_radius }} !important;\n    box-shadow: 0 5px 20px rgba(0,0,0,0.1);\n    background: rgb(var(--color-background));\n    border: 1px solid rgba(var(--color-foreground), 0.1);\n    font-family: var(--font-body-family);\n    display: flex;\n    align-items: center;\n  }\n  \n  .carousel-inner {\n    flex: 1;\n    overflow: hidden;\n  }\n  \n  .carousel-track {\n    display: flex;\n    transition: transform 0.5s ease;\n  }\n  \n  .carousel-item {\n    min-width: 100%;\n    box-sizing: border-box;\n    padding: 20px;\n  }\n  \n  .review-card {\n    display: flex;\n    flex-direction: column;\n    gap: 12px;\n  }\n  \n  .reviewer-info {\n    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);\n    padding-bottom: 10px;\n  }\n  \n  .reviewer-name {\n    font-size: var(--font-heading-scale);\n    font-weight: 600;\n    margin-bottom: 5px;\n    color: rgb(var(--color-foreground));\n    font-family: var(--font-heading-family);\n  }\n  \n  .review-stars {\n    color: #FFD700;\n    font-size: var(--font-body-scale);\n    margin-bottom: 3px;\n  }\n  \n  .review-date {\n    color: rgba(var(--color-foreground), 0.6);\n    font-size: var(--font-body-scale);\n  }\n  \n  .review-text {\n    font-size: var(--font-body-scale);\n    color: rgb(var(--color-foreground));\n    line-height: 1.6;\n    font-style: italic;\n  }\n  \n  .carousel-control-prev,\n  .carousel-control-next {\n    position: relative;\n    background-color: rgba(var(--color-accent), 0.8);\n    color: rgb(var(--color-background));\n    border: none;\n    border-radius: 50%;\n    width: 40px;\n    height: 40px;\n    cursor: pointer;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 2;\n    transition: all 0.3s ease;\n    flex-shrink: 0;\n    margin: 0 10px;\n  }\n  \n  .carousel-control-prev:hover,\n  .carousel-control-next:hover {\n    background-color: rgb(var(--color-accent));\n    transform: scale(1.1);\n  }\n  \n  .carousel-controls {\n    display: none;\n  }\n  \n  \/* Responsive *\/\n  @media (max-width: 768px) {\n    .carousel {\n      width: 95%;\n      margin: 20px auto;\n      flex-direction: column;\n      gap: 15px;\n      align-items: stretch;\n    }\n    \n    .carousel-inner {\n      order: 1;\n      min-height: auto;\n    }\n    \n    .carousel-item {\n      padding: 20px 15px;\n      min-height: auto;\n    }\n    \n    .review-card {\n      width: 100%;\n    }\n    \n    .reviewer-name {\n      font-size: var(--font-heading-scale);\n      margin-bottom: 8px;\n    }\n    \n    .review-stars {\n      font-size: var(--font-body-scale);\n    }\n    \n    .review-date {\n      font-size: var(--font-body-scale);\n    }\n    \n    .review-text {\n      font-size: var(--font-body-scale);\n      line-height: 1.6;\n    }\n    \n    \/* Nascondi controlli desktop *\/\n    .carousel > .carousel-control-prev,\n    .carousel > .carousel-control-next {\n      display: none;\n    }\n    \n    \/* Mostra controlli mobile *\/\n    .carousel-controls {\n      order: 2;\n      display: flex;\n      justify-content: center;\n      gap: 15px;\n    }\n    \n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      position: static;\n      width: 45px;\n      height: 45px;\n      font-size: 1.3rem;\n      margin: 0;\n      flex-shrink: 0;\n      display: flex;\n    }\n  }\n  \n  @media (max-width: 480px) {\n    .carousel {\n      width: 98%;\n      margin: 15px auto;\n      gap: 12px;\n    }\n    \n    .carousel-item {\n      padding: 18px 12px;\n    }\n    \n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      width: 40px;\n      height: 40px;\n      font-size: 1.2rem;\n    }\n  }\n<\/style>\n\n<script>\n  let currentIndex = 0;\n  \n  function showSlide(index) {\n    const track = document.querySelector('.carousel-track');\n    const items = document.querySelectorAll('.carousel-item');\n    const total = items.length;\n    \n    if (index >= total) currentIndex = 0;\n    else if (index < 0) currentIndex = total - 1;\n    else currentIndex = index;\n    \n    const offset = -currentIndex * 100;\n    track.style.transform = `translateX(${offset}%)`;\n  }\n  \n  function nextSlide() {\n    showSlide(currentIndex + 1);\n  }\n  \n  function prevSlide() {\n    showSlide(currentIndex - 1);\n  }\n  \n  \/\/ Auto-scroll ogni 5 secondi\n  setInterval(nextSlide, 5000);\n  \n  \/\/ Inizializza il carousel\n  document.addEventListener('DOMContentLoaded', function() {\n    showSlide(0);\n  });\n<\/script>","color_scheme":"","padding_top":40,"padding_bottom":52}},"recensioni_carousel_aWyRRN":{"type":"recensioni-carousel","blocks":{"review_Fzt6NV":{"type":"review","settings":{"name":"Giuseppe rossi","stars":"5","date":"01\/01\/2025","text":"Prova"}}},"block_order":["review_Fzt6NV"],"disabled":true,"name":"Carosello Recensioni","settings":{"title":"RECENSIONI DA GOOGLE","star_style":"trustpilot","star_size":40}},"collapsible_content_n7dAFd":{"type":"collapsible-content","blocks":{"collapsible_row_NEwLLy":{"type":"collapsible_row","settings":{"heading":"Costi di spedizione","icon":"truck","row_content":"","page":""}},"collapsible_row_mjTD8V":{"type":"collapsible_row","settings":{"heading":"Metodi di pagamento accettati","icon":"price_tag","row_content":"","page":""}},"collapsible_row_VpRQeP":{"type":"collapsible_row","settings":{"heading":"Posso restituire il mio ordine?","icon":"return","row_content":"","page":""}}},"block_order":["collapsible_row_NEwLLy","collapsible_row_mjTD8V","collapsible_row_VpRQeP"],"disabled":true,"settings":{"caption":"","heading":"Domande frequenti","heading_size":"h1","heading_alignment":"center","layout":"none","color_scheme":"scheme-1","container_color_scheme":"scheme-3","open_first_collapsible_row":false,"image_ratio":"adapt","desktop_layout":"image_second","padding_top":36,"padding_bottom":36}},"related-products":{"type":"related-products","settings":{"heading":"Di solito acquistati insieme","heading_size":"h2","products_to_show":4,"columns_desktop":4,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","padding_top":36,"padding_bottom":28}},"image_with_text_HQERJ9":{"type":"image-with-text","blocks":{"heading_EQ9y8a":{"type":"heading","settings":{"heading":"Beneficio","heading_size":"h2"}},"text_KRjTeh":{"type":"text","settings":{"text":"<p>Spiegazione beneficio<\/p>","text_style":"body"}}},"block_order":["heading_EQ9y8a","text_KRjTeh"],"disabled":true,"settings":{"height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"middle","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-1","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"multicolumn_JUfghr":{"type":"multicolumn","blocks":{"column_yHm4RR":{"type":"column","settings":{"title":"<strong>Beneficio<\/strong>","text":"<p>Spiegazione beneficio<\/p>","link_label":"","link":""}},"column_39ga67":{"type":"column","settings":{"title":"<strong>Beneficio<\/strong>","text":"<p>Spiegazione beneficio<\/p>","link_label":"","link":""}},"column_4htfGV":{"type":"column","settings":{"title":"<strong>Beneficio<\/strong>","text":"<p>Spiegazione beneficio<\/p>","link_label":"","link":""}}},"block_order":["column_yHm4RR","column_39ga67","column_4htfGV"],"disabled":true,"settings":{"title":"Perché sceglierci","heading_size":"h2","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-2","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}}},"order":["main","custom_liquid_fWpVR4","text_with_icons_CH9Pqb","custom_liquid_ePnbeh","recensioni_carousel_aWyRRN","collapsible_content_n7dAFd","related-products","image_with_text_HQERJ9","multicolumn_JUfghr"]}
+=======
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "custom_liquid_7AtNTX": {
+          "type": "custom_liquid",
+          "name": "Codice stelline recensioni",
+          "settings": {
+            "custom_liquid": "<div class=\"trustpilot-badge\">\n  <div class=\"trustpilot-stars\">★★★★★</div>\n  <a href=\"#reviewCarousel\" class=\"read-reviews-link\">Leggi le recensioni di Google</a>\n</div>\n\n<style>\n  .trustpilot-badge {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    margin-top: 4px;\n    flex-wrap: wrap;\n  }\n\n  .trustpilot-stars {\n    font-size: 20px;\n    color: #FFD700; /* colore oro per le stelle */\n    line-height: 1;\n  }\n\n  .read-reviews-link {\n    font-size: 14px;\n    color: #6f1a2e; /* bordeaux / burgundy */\n    text-decoration: underline;\n    cursor: pointer;\n    transition: opacity 0.2s;\n  }\n\n  .read-reviews-link:hover {\n    opacity: 0.7;\n  }\n\n  @media (max-width: 600px) {\n    .trustpilot-badge {\n      flex-direction: column;\n      align-items: flex-start;\n    }\n    .trustpilot-stars {\n      font-size: 18px;\n    }\n  }\n\n  html {\n    scroll-behavior: smooth;\n  }\n</style>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "custom_liquid_D8xxCw": {
+          "type": "custom_liquid",
+          "name": "Codice calcolo spedizione gratuita",
+          "settings": {
+            "custom_liquid": "{% assign free_shipping_threshold = 15000 %} <!-- Soglia di spedizione gratuita in centesimi -->\n{% assign cart_total = cart.total_price %} <!-- Totale del carrello -->\n{% assign product_price = product.price %} <!-- Prezzo del prodotto visualizzato -->\n\n<!-- Calcolo del totale combinato -->\n{% assign combined_total = cart_total | plus: product_price %}\n\n<!-- Controllo del totale combinato rispetto alla soglia -->\n{% if combined_total < free_shipping_threshold %}\n{% assign amount_needed = free_shipping_threshold | minus: combined_total %}\n<p style=\"font-size: 13px; display: inline;\">\n Aggiungi altri <b>{{ amount_needed | money }}</b> per la spedizione gratuita!\n</p>\n{% else %}\n<p style=\"display: inline;\">\nHai diritto alla spedizione gratuita!\n</p>\n{% endif %}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "delivery_estimate_78YMXV": {
+          "type": "delivery_estimate",
+          "disabled": true,
+          "settings": {
+            "pre_text": "Ordinando ora,  riceverai il tuo ordine tra il",
+            "min_days": 15,
+            "max_days": 20
+          }
+        },
+        "custom_liquid_UntiJ9": {
+          "type": "custom_liquid",
+          "name": "Codice previsione consegna",
+          "settings": {
+            "custom_liquid": "{% assign current_date = \"now\" | date: \"%s\" %}\n{% assign current_day = \"now\" | date: \"%A\" %}\n{% assign min_days_to_add = 2 %}\n{% assign max_days_to_add = 6 %}\n{% if current_day == \"Friday\" %}\n  {% assign min_days_to_add = 4 %}\n  {% assign max_days_to_add = 8 %}\n{% elsif current_day == \"Saturday\" %}\n  {% assign min_days_to_add = 3 %}\n  {% assign max_days_to_add = 7 %}\n{% elsif current_day == \"Sunday\" %}\n  {% assign min_days_to_add = 2 %}\n  {% assign max_days_to_add = 6 %}\n{% elsif current_day == \"Monday\" %}\n  {% assign min_days_to_add = 2 %}\n  {% assign max_days_to_add = 8 %}\n{% elsif current_day == \"Tuesday\" %}\n  {% assign min_days_to_add = 2 %}\n  {% assign max_days_to_add = 8 %}\n{% elsif current_day == \"Wednesday\" %}\n  {% assign min_days_to_add = 2 %}\n  {% assign max_days_to_add = 8 %}\n{% elsif current_day == \"Thursday\" %}\n  {% assign min_days_to_add = 5 %}\n  {% assign max_days_to_add = 8 %}\n{% endif %}\n{% assign min_seconds_to_add = min_days_to_add | times: 86400 %}\n{% assign max_seconds_to_add = max_days_to_add | times: 86400 %}\n{% assign min_future_timestamp = current_date | plus: min_seconds_to_add %}\n{% assign max_future_timestamp = current_date | plus: max_seconds_to_add %}\n{% assign min_future_date = min_future_timestamp | date: \"%d-%m-%Y\" %}\n{% assign max_future_date = max_future_timestamp | date: \"%d-%m-%Y\" %}\n\n<p style=\"\n  color: {{ settings.color_schemes['scheme-1'].settings.text }}\n\n;\n  border-radius: {{ settings.text_boxes_radius }}px;\n  border: 1px solid {{ settings.color_schemes['scheme-1'].settings.text }};\n  border-opacity: {{ settings.text_boxes_border_opacity }}%;\n  padding: 10px;\n  text-align: center;\n  box-shadow: {{ settings.text_boxes_shadow_horizontal_offset }}px {{ settings.text_boxes_shadow_vertical_offset }}px {{ settings.text_boxes_shadow_blur }}px rgba({{ settings.colors_shadow | color_extract: 'red' }}, {{ settings.colors_shadow | color_extract: 'green' }}, {{ settings.colors_shadow | color_extract: 'blue' }}, {{ settings.text_boxes_shadow_opacity | divided_by: 100.0 }});\n\">\n  Ordinando ora, <br> riceverai il tuo ordine tra il <b>{{ min_future_date }}</b> e il <b>{{ max_future_date }}</b>!\n</p>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "custom_liquid_7AtNTX",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_D8xxCw",
+        "buy_buttons",
+        "delivery_estimate_78YMXV",
+        "custom_liquid_UntiJ9",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "custom_liquid_fWpVR4": {
+      "type": "custom-liquid",
+      "name": "Codice descrizione comprimibile",
+      "settings": {
+        "custom_liquid": "<!-- Descrizione prodotto collapsible -->\n<div class=\"descrizione-collapsible\">\n    <div class=\"descrizione-header\">\n        <span class=\"icon\">+</span>\n        <span class=\"header-text\">Clicca per leggere la descrizione completa</span>\n    </div>\n    <div class=\"descrizione-content\">\n        <div class=\"descrizione-inner\">\n            {{ product.description | replace: '<img', '<img style=\"max-width: 100%;\"' }}\n        </div>\n    </div>\n</div>\n\n<style>\n    .descrizione-collapsible {\n        width: 100%;\n        max-width: 1300px;\n        margin: 0 auto;\n        padding: 0 20px;\n        box-sizing: border-box;\n    }\n\n    .descrizione-header {\n        padding: 15px;\n        cursor: pointer;\n        display: flex;\n        align-items: center;\n        border: 1px solid #ddd;\n        border-radius: {{ settings.text_boxes_radius }} !important;\n    }\n\n    .descrizione-header .icon {\n        margin-right: 10px;\n    }\n\n    .descrizione-content {\n        display: none;\n        overflow: hidden;\n        transition: max-height 0.3s ease-out;\n    }\n\n    .descrizione-inner {\n        font-family: Arial, sans-serif;\n        font-size: 14px;\n        color: #555;\n        background-color: transparent;\n        padding: 15px;\n    }\n\n    @media screen and (max-width: 600px) {\n        .descrizione-collapsible {\n            width: auto !important;\n            padding: 0 10px !important;\n        }\n\n        img {\n            max-width: 100% !important;\n            height: auto !important;\n        }\n    }\n</style>\n\n<script>\n    document.addEventListener('DOMContentLoaded', function() {\n        document.querySelectorAll('.descrizione-header').forEach(function(header) {\n            var content = header.nextElementSibling;\n            var icon = header.querySelector('.icon');\n            var headerText = header.querySelector('.header-text');\n\n            header.addEventListener('click', function() {\n                var isVisible = content.style.display === \"block\";\n                content.style.display = isVisible ? \"none\" : \"block\";\n                headerText.textContent = isVisible\n                    ? \"Clicca per leggere la descrizione completa\"\n                    : \"Clicca per nascondere la descrizione\";\n                icon.textContent = isVisible ? \"+\" : \"-\";\n            });\n        });\n    });\n</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "text_with_icons_CH9Pqb": {
+      "type": "text-with-icons",
+      "blocks": {
+        "block_hJ3GEz": {
+          "type": "block",
+          "settings": {
+            "icon": "heart",
+            "text": "Gli articoli più ricercati, da tutto il mondo",
+            "link": ""
+          }
+        },
+        "block_WBbhGC": {
+          "type": "block",
+          "settings": {
+            "icon": "shipping_outline",
+            "text": "Spedizione in 1-4 giorni lavorativi",
+            "link": ""
+          }
+        },
+        "block_zHFjnA": {
+          "type": "block",
+          "settings": {
+            "icon": "messages",
+            "text": "Assistenza in chat 24/7",
+            "link": ""
+          }
+        },
+        "block_Kd4xCE": {
+          "type": "block",
+          "settings": {
+            "icon": "secure",
+            "text": "Pagamenti tracciati e sicuri",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_hJ3GEz",
+        "block_WBbhGC",
+        "block_zHFjnA",
+        "block_Kd4xCE"
+      ],
+      "disabled": true,
+      "settings": {
+        "color": "",
+        "background": "",
+        "section_space": "top_and_bottom"
+      }
+    },
+    "custom_liquid_ePnbeh": {
+      "type": "custom-liquid",
+      "name": "Codice carosello recensioni",
+      "settings": {
+        "custom_liquid": "<h2 style=\"text-align: center;\">RECENSIONI DA GOOGLE</h2>\n<div class=\"carousel\" id=\"reviewCarousel\">\n  <div class=\"carousel-inner\">\n    <!-- Inizio recensioni -->\n    <div class=\"carousel-track\">\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Giovanni Genovese</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\">21/02/2025</div>\n          </div>\n          <div class=\"review-text\">\n            Guidato passo passo nell'acquisto della mia nuova bici. Grande competenza.\n          </div>\n        </div>\n      </div>\n\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Federico Marinari</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\">04/03/2025</div>\n          </div>\n          <div class=\"review-text\">\n            Esperienza ottima, personale efficiente. Bici usata perfetta.\n          </div>\n        </div>\n      </div>\n\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Anna Farinaccio</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\">14/10/2024</div>\n          </div>\n          <div class=\"review-text\">\n            Gentilezza e professionalità. Ottimo consiglio anche per chi non è esperto.\n          </div>\n        </div>\n      </div>\n\n      <!-- Aggiungi altre recensioni come queste se vuoi -->\n\n    </div>\n  </div>\n\n  <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;</button>\n  <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;</button>\n</div>\n\n<style>\n  .carousel {\n    width: 90%;\n    max-width: 700px;\n    overflow: hidden;\n    position: relative;\n    margin: 40px auto;\n    border-radius: 0px;\n    box-shadow: 0 5px 20px rgba(0,0,0,0.1);\n    background: white;\n    border: 1px solid #eee;\n  }\n\n  .carousel-inner {\n    width: 100%;\n    overflow: hidden;\n  }\n\n  .carousel-track {\n    display: flex;\n    transition: transform 0.5s ease;\n  }\n\n  .carousel-item {\n    min-width: 100%;\n    box-sizing: border-box;\n    padding: 20px;\n  }\n\n  .review-card {\n    display: flex;\n    flex-direction: column;\n    gap: 10px;\n  }\n\n  .reviewer-name {\n    font-size: 1.2rem;\n    font-weight: 600;\n    margin-bottom: 5px;\n  }\n\n  .review-stars {\n    color: #FFD700;\n  }\n\n  .review-date {\n    color: #888;\n    font-size: 0.9rem;\n  }\n\n  .review-text {\n    font-size: 1rem;\n    color: #333;\n    line-height: 1.6;\n  }\n\n  .carousel-control-prev,\n  .carousel-control-next {\n    position: absolute;\n    top: 50%;\n    transform: translateY(-50%);\n    background-color: rgba(0,0,0,0.5);\n    color: white;\n    border: none;\n    border-radius: 50%;\n    width: 36px;\n    height: 36px;\n    cursor: pointer;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 2;\n  }\n\n  .carousel-control-prev { left: 10px; }\n  .carousel-control-next { right: 10px; }\n</style>\n\n<script>\n  let currentIndex = 0;\n\n  function showSlide(index) {\n    const track = document.querySelector('.carousel-track');\n    const items = document.querySelectorAll('.carousel-item');\n    const total = items.length;\n\n    if (index >= total) currentIndex = 0;\n    else if (index < 0) currentIndex = total - 1;\n    else currentIndex = index;\n\n    const offset = -currentIndex * 100;\n    track.style.transform = `translateX(${offset}%)`;\n  }\n\n  function nextSlide() {\n    showSlide(currentIndex + 1);\n  }\n\n  function prevSlide() {\n    showSlide(currentIndex - 1);\n  }\n\n  setInterval(nextSlide, 4000);\n</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "recensioni_carousel_aWyRRN": {
+      "type": "recensioni-carousel",
+      "blocks": {
+        "review_Fzt6NV": {
+          "type": "review",
+          "settings": {
+            "name": "Giuseppe rossi",
+            "stars": "5",
+            "date": "01/01/2025",
+            "text": "Prova"
+          }
+        }
+      },
+      "block_order": [
+        "review_Fzt6NV"
+      ],
+      "disabled": true,
+      "name": "Carosello Recensioni",
+      "settings": {
+        "title": "RECENSIONI DA GOOGLE",
+        "star_style": "trustpilot",
+        "star_size": 40
+      }
+    },
+    "collapsible_content_n7dAFd": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_NEwLLy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Costi di spedizione",
+            "icon": "truck",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_mjTD8V": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Metodi di pagamento accettati",
+            "icon": "price_tag",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_VpRQeP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Posso restituire il mio ordine?",
+            "icon": "return",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_NEwLLy",
+        "collapsible_row_mjTD8V",
+        "collapsible_row_VpRQeP"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Domande frequenti",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-1",
+        "container_color_scheme": "scheme-3",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Di solito acquistati insieme",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_HQERJ9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EQ9y8a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Beneficio",
+            "heading_size": "h2"
+          }
+        },
+        "text_KRjTeh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Spiegazione beneficio</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EQ9y8a",
+        "text_KRjTeh"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_JUfghr": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yHm4RR": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Beneficio</strong>",
+            "text": "<p>Spiegazione beneficio</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_39ga67": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Beneficio</strong>",
+            "text": "<p>Spiegazione beneficio</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4htfGV": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Beneficio</strong>",
+            "text": "<p>Spiegazione beneficio</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_yHm4RR",
+        "column_39ga67",
+        "column_4htfGV"
+      ],
+      "settings": {
+        "title": "Perché sceglierci",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_EqnGUM": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Come si cura il lino?",
+            "icon": "question_mark",
+            "row_content": "<p>Lavaggio a mano o in lavatrice a max 30 °C con detersivo delicato; stendi all’ombra e stiratura leggera a rovescio.</p>",
+            "page": ""
+          }
+        },
+        "row2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Quanto tempo impiega la spedizione?",
+            "icon": "question_mark",
+            "row_content": "<p>Spediamo entro 24 h dal ricevimento dell’ordine; consegna standard in 2–4 giorni lavorativi.</p>",
+            "page": ""
+          }
+        },
+        "row3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Posso restituire se non mi soddisfa?",
+            "icon": "question_mark",
+            "row_content": "<p>Reso gratuito entro 14 giorni: compila il modulo in Area Cliente e riceverai il ritiro a domicilio senza costi.</p>",
+            "page": ""
+          }
+        },
+        "row4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Come scelgo la taglia giusta?",
+            "icon": "question_mark",
+            "row_content": "<p>Consulta la nostra Guida Taglie – misura un capo simile e confronta con le dimensioni indicate in scheda.</p>",
+            "page": ""
+          }
+        },
+        "row5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I capi si stropicciano facilmente?",
+            "icon": "question_mark",
+            "row_content": "<p>Il lino è resistente alle pieghe: eventuali grinze si ammorbidiscono con il calore del corpo o con una leggera stiratura a vapore.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "row1",
+        "row2",
+        "row3",
+        "row4",
+        "row5"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Domande Frequenti",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-3",
+        "container_color_scheme": "scheme-3",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_7oUjg2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Jz1": {
+          "type": "heading",
+          "settings": {
+            "heading": "100 % Lino Artigianale, 100 % Made in Italy",
+            "heading_size": "h2"
+          }
+        },
+        "text_4Vf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ogni capo nasce dalla tradizione della Costiera Amalfitana: fibre naturali selezionate e lavorazioni fatte a mano per regalarti stile e comfort senza tempo.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Jz1",
+        "text_4Vf"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_2fTt4H": {
+      "type": "multicolumn",
+      "blocks": {
+        "col1": {
+          "type": "column",
+          "settings": {
+            "title": "Spedizione Gratuita",
+            "text": "<p>Ordini sopra 100 €: consegna espressa senza costi aggiuntivi.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "col2": {
+          "type": "column",
+          "settings": {
+            "title": "Resi Facili",
+            "text": "<p>Hai 14 giorni per restituire: ti guidiamo passo dopo passo.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "col3": {
+          "type": "column",
+          "settings": {
+            "title": "Supporto Dedicato",
+            "text": "<p>Siamo al tuo fianco via chat e email, 7 giorni su 7.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "col1",
+        "col2",
+        "col3"
+      ],
+      "settings": {
+        "title": "I nostri vantaggi",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_EqnGUM",
+    "image_with_text_7oUjg2",
+    "multicolumn_2fTt4H",
+    "custom_liquid_fWpVR4",
+    "text_with_icons_CH9Pqb",
+    "custom_liquid_ePnbeh",
+    "recensioni_carousel_aWyRRN",
+    "collapsible_content_n7dAFd",
+    "related-products",
+    "image_with_text_HQERJ9",
+    "multicolumn_JUfghr"
+  ]
+}
+>>>>>>> c3e606bdd0cf632934a90a5e43e97883df51a791

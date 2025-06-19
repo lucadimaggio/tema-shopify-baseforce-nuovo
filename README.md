@@ -1086,6 +1086,49 @@ Il file `templates/product.json` definisce la struttura e i contenuti delle pagi
 - `content_layout`: "no-overlap", "overlap"
 - `background_style`: "none", "primary"
 
+### Animazioni
+Il tema prevede due impostazioni globali per le animazioni, definite nella sezione “Animations” di config/settings_schema.json.
+
+animations_reveal_on_scroll
+Attiva l’effetto di comparsa graduale degli elementi quando vengono visualizzati durante lo scroll della pagina. Valori possibili: true (impostazione predefinita) oppure false.
+
+animations_hover_elements
+Seleziona l’effetto hover applicato a card, pulsanti e altri componenti. Le opzioni disponibili sono:
+
+default – nessuna animazione speciale (impostazione base del tema);
+
+vertical-lift – solleva l’elemento in verticale;
+
+3d-lift – applica uno spostamento con leggera rotazione 3D (“3D Lift Enhanced” in assets/base.css);
+
+bounce – effetto rimbalzo;
+
+glow – bagliore intorno all’elemento;
+
+scale – leggera espansione;
+
+wobble – piccola oscillazione.
+
+L’impostazione predefinita nel file settings_data.json è vertical-lift:
+
+\"animations_reveal_on_scroll\": true,
+\"animations_hover_elements\": \"vertical-lift\"
+
+Le possibili opzioni sono elencate in settings_schema.json:
+
+\"id\": \"animations_hover_elements\",
+\"options\": [
+  { \"value\": \"default\" },
+  { \"value\": \"vertical-lift\" },
+  { \"value\": \"3d-lift\" },
+  { \"value\": \"bounce\" },
+  { \"value\": \"glow\" },
+  { \"value\": \"scale\" },
+  { \"value\": \"wobble\" }
+]
+
+Con queste impostazioni puoi controllare se gli elementi appaiono gradualmente quando scorrono e quale animazione viene applicata al passaggio del mouse.
+
 ## 💡 Best Practices
 
 1. **Conversioni**: Posiziona elementi di trust sopra il pulsante acquista
@@ -1104,3 +1147,50 @@ Il file `templates/product.json` definisce la struttura e i contenuti delle pagi
 - **Accessibilità**: Assicurati che i contrasti siano sufficienti
 - **Performance**: Ottimizza immagini e contenuti per velocità caricamento
 - **Coerenza**: qualora ti venga esplicitamente richiesto di creare una nuova sezione, ricordati di utilizzare le stesse impostazioni di stile già impostate nel tema
+
+
+# 📏 Multipli accettati per campi numerici di `settings_data.json` (Shopify Dawn Theme)
+
+| Campo                          | Tipo     | Multiplo richiesto |
+|-------------------------------|----------|---------------------|
+| `body_scale`                  | integer  | 5                   |
+| `buttons_border_opacity`      | integer  | 10                  |
+| `buttons_border_thickness`    | integer  | 1                   |
+| `buttons_radius`              | integer  | 2                   |
+| `buttons_shadow_blur`         | integer  | 5                   |
+| `buttons_shadow_horizontal_offset` | integer  | 1              |
+| `buttons_shadow_opacity`      | integer  | 10                  |
+| `buttons_shadow_vertical_offset` | integer  | 1               |
+| `card_border_opacity`         | integer  | 10                  |
+| `card_border_thickness`       | integer  | 1                   |
+| `card_corner_radius`          | integer  | 2                   |
+| `card_image_padding`          | integer  | 4                   |
+| `card_shadow_blur`            | integer  | 5                   |
+| `card_shadow_horizontal_offset` | integer | 1                  |
+| `card_shadow_opacity`         | integer  | 10                  |
+| `card_shadow_vertical_offset` | integer  | 1                   |
+| `heading_scale`               | integer  | 5                   |
+| `inputs_border_opacity`       | integer  | 10                  |
+| `inputs_border_thickness`     | integer  | 1                   |
+| `inputs_radius`               | integer  | 2                   |
+| `inputs_shadow_blur`          | integer  | 5                   |
+| `inputs_shadow_horizontal_offset` | integer | 1                |
+| `inputs_shadow_opacity`       | integer  | 10                  |
+| `inputs_shadow_vertical_offset` | integer  | 2                  |
+| `logo_width`                  | integer  | 1                   |
+| `page_width`                  | integer  | 100                 |
+| `spacing_grid_horizontal`     | integer  | 4                   |
+| `spacing_grid_vertical`       | integer  | 4                   |
+| `spacing_sections`            | integer  | 10                  |
+| `variant_pills_border_opacity`| integer  | 10                  |
+| `variant_pills_border_thickness` | integer | 1                |
+| `variant_pills_radius`        | integer  | 2                   |
+| `variant_pills_shadow_blur`   | integer  | 5                   |
+| `variant_pills_shadow_horizontal_offset` | integer | 1        |
+| `variant_pills_shadow_opacity`| integer  | 10                  |
+| `variant_pills_shadow_vertical_offset` | integer | 1          |
+| `media_shadow_blur` | integer | 5          |
+| `popup_shadow_blur` | integer | 5          |
+| `drawer_shadow_blur` | integer | 5          |
+
+
