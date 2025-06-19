@@ -1431,6 +1431,26 @@
     ]
   },
   {
+    "name": "t:settings_schema.analytics.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:settings_schema.analytics.settings.gtm_header.content"
+      },
+      {
+        "type": "text",
+        "id": "gtm_id",
+        "label": "t:settings_schema.analytics.settings.gtm_id.label",
+        "placeholder": "GTM-XXXXXXX",
+        "info": "t:settings_schema.analytics.settings.gtm_id.info"
+      },
+      {
+        "type": "paragraph",
+        "content": "t:settings_schema.analytics.settings.gtm_paragraph.content"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.cart.name",
     "settings": [
       {
