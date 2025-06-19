@@ -1,1 +1,382 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Posizionamento o cosa vende il negozio","heading_size":"h2"}},"text_ghLyNQ":{"type":"text","settings":{"text":"<strong>Beneficio principale<\/strong>","text_style":"body"}},"button":{"type":"buttons","settings":{"button_label_1":"Scopri le collezioni","button_link_1":"shopify:\/\/collections","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","text_ghLyNQ","button"],"settings":{"image_overlay_opacity":30,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-1","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"custom_liquid_QAWQkd":{"type":"custom-liquid","disabled":true,"settings":{"custom_liquid":"<br>","color_scheme":"","padding_top":0,"padding_bottom":0}},"custom_liquid_7GJYwP":{"type":"custom-liquid","settings":{"custom_liquid":"{% assign scheme = settings.color_scheme_1 %}\n\n<h2 style=\"text-align: center; color: rgb({{ scheme.text }}); font-family: var(--font-heading-family); font-size: {{ settings.type_header_font_size }}px;\">Recensioni di Google<\/h2>\n<p style=\"text-align: center; font-size: {{ settings.type_body_font_size }}px; color: rgba({{ scheme.text }}, 0.6); margin-top: 5px;\">4,8\/5 ★★★★★ (72 recensioni)<\/p>\n\n<div class=\"carousel\" id=\"reviewCarousel\" style=\"\n  --color-background: {{ scheme.background }};\n  --color-foreground: {{ scheme.text }};\n  --color-accent: {{ scheme.accent }};\n\">\n  <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;<\/button>\n  <div class=\"carousel-inner\">\n    <!-- Inizio recensioni -->\n    <div class=\"carousel-track\">\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Shabana Lakdawala<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">1 mese fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            This store has such thoughtfully created clothing. Beautiful linen pieces designed and made it Italy. We're so thankful we stopped by and are taking back several unique items. And many thanks to Esther who made our shopping experience so special.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Gloria Kim<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">1 mese fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Highly recommended!!! Unlike the other clothing stores in Positano, this store has a lot of exotic and unique pieces! I found 5-6 great pieces in this store, which definitely made my day!\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Joe<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">4 settimane fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Great clothing! Perfect fit and high fashion. If you love linen clothing made locally this is the place. Highly recommended if you're staying in Positano and traveling back to the USA. You'll look amazing!\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Nadir A<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">9 mesi fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Highly recommend shopping from this shop and making your Positano trip a memorable one, really good quality stuff, I missed out on a jacket...I will try to go back there to get it. Ester was really helpful in showing different designs.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Emily Hernandez<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">3 settimane fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Absolutely gorgeous and very lovely ladies!! A GREAT store for authentic Italian linen\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Alexa Reghenzani<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">2 anni fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Amazing shop with everything designed by a local father-daughter team. Clothes for men, women, & children. Ivan was super helpful & styled me. They also offer hemming of pants\/dresses if needed.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Julie<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">10 mesi fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Love this store! Lots to choose from. Very stylish clothes and Esther and the rest of the staff were great! Esther was a joy, a fun person, and helped me find an outfit I love! And the dress I purchased was made in Positano.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Mary Taylor Wagner<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">un anno fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Excellent quality clothes\/dresses, the store also offers tailoring and staff is very helpful and kind.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Vittorio Cobalto<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">11 mesi fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Casa Mastro Moda è la boutique di Positano per eccellenza. La selezione di abiti e accessori è straordinaria, soprattutto le camicie.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Giacoma Cusimano<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">11 mesi fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            This is a must shop store while in Positano and not a tourist trap. The clothing is handmade by the owner. Her sister helps in the shop and helped us. Not pushy at all and showed me all the ways to wear the outfit I purchased.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Tom H<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">3 settimane fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Beautiful handmade clothes, excellent service\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Jessi Berrin<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">un anno fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Ivan was spectacular! We purchased the most beautiful scarf. Absolutely in love with the design, fabric, and texture. Thank you so much for your hospitality. We will return on our next trip to Positano.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Lucia Ferrara<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">2 anni fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            One of my favourite shops in POSITANO, Excellent clothes hand made and with natural fabrics. I bought many dresses in linen and lace, one dress with lemon embroidered and a man shirt.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Bryce A. Denton<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">un anno fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Great service and clothes. Tailored some pants for my wife in no time at all. Just know that there are no returns, only exchanges. Not a complaint just a heads up for future shoppers.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Jacquelyn D<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">2 anni fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Amazing staff and store ! They helped me pick out an outfit and found one for my boyfriend who wasn't there. They tailored my pants and delivered it to my hotel same day! Very friendly service, amazing people.\n          <\/div>\n        <\/div>\n      <\/div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Jeanine Kinzie<\/h1>\n            <div class=\"review-stars\">★★★★★<\/div>\n            <div class=\"review-date\">2 anni fa<\/div>\n          <\/div>\n          <div class=\"review-text\">\n            Very kind man running this shop! The fabrics and quality are amazing and very special. They look dimensional and have many layers of color to make them look unique.\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n  <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;<\/button>\n  \n  <!-- Controlli mobile -->\n  <div class=\"carousel-controls\">\n    <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;<\/button>\n    <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;<\/button>\n  <\/div>\n<\/div>\n\n<style>\n@media (max-width: 768px) {\n  .carousel {\n   width: 90% !important;\n  }\n}\n  .carousel {\n    width: 90%;\n    max-width: 700px;\n    overflow: hidden;\n    position: relative;\n    margin: 40px auto;\n    border-radius: {{ settings.text_boxes_radius }} !important;\n    box-shadow: 0 5px 20px rgba(0,0,0,0.1);\n    background: rgb(var(--color-background));\n    border: 1px solid rgba(var(--color-foreground), 0.1);\n    font-family: var(--font-body-family);\n    display: flex;\n    align-items: center;\n  }\n  \n  .carousel-inner {\n    flex: 1;\n    overflow: hidden;\n  }\n  \n  .carousel-track {\n    display: flex;\n    transition: transform 0.5s ease;\n  }\n  \n  .carousel-item {\n    min-width: 100%;\n    box-sizing: border-box;\n    padding: 20px;\n  }\n  \n  .review-card {\n    display: flex;\n    flex-direction: column;\n    gap: 12px;\n  }\n  \n  .reviewer-info {\n    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);\n    padding-bottom: 10px;\n  }\n  \n  .reviewer-name {\n    font-size: var(--font-heading-scale);\n    font-weight: 600;\n    margin-bottom: 5px;\n    color: rgb(var(--color-foreground));\n    font-family: var(--font-heading-family);\n  }\n  \n  .review-stars {\n    color: #FFD700;\n    font-size: var(--font-body-scale);\n    margin-bottom: 3px;\n  }\n  \n  .review-date {\n    color: rgba(var(--color-foreground), 0.6);\n    font-size: var(--font-body-scale);\n  }\n  \n  .review-text {\n    font-size: var(--font-body-scale);\n    color: rgb(var(--color-foreground));\n    line-height: 1.6;\n    font-style: italic;\n  }\n  \n  .carousel-control-prev,\n  .carousel-control-next {\n    position: relative;\n    background-color: rgba(var(--color-accent), 0.8);\n    color: rgb(var(--color-background));\n    border: none;\n    border-radius: 50%;\n    width: 40px;\n    height: 40px;\n    cursor: pointer;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 2;\n    transition: all 0.3s ease;\n    flex-shrink: 0;\n    margin: 0 10px;\n  }\n  \n  .carousel-control-prev:hover,\n  .carousel-control-next:hover {\n    background-color: rgb(var(--color-accent));\n    transform: scale(1.1);\n  }\n  \n  .carousel-controls {\n    display: none;\n  }\n  \n  \/* Responsive *\/\n  @media (max-width: 768px) {\n    .carousel {\n      width: 95%;\n      margin: 20px auto;\n      flex-direction: column;\n      gap: 15px;\n      align-items: stretch;\n    }\n    \n    .carousel-inner {\n      order: 1;\n      min-height: auto;\n    }\n    \n    .carousel-item {\n      padding: 20px 15px;\n      min-height: auto;\n    }\n    \n    .review-card {\n      width: 100%;\n    }\n    \n    .reviewer-name {\n      font-size: var(--font-heading-scale);\n      margin-bottom: 8px;\n    }\n    \n    .review-stars {\n      font-size: var(--font-body-scale);\n    }\n    \n    .review-date {\n      font-size: var(--font-body-scale);\n    }\n    \n    .review-text {\n      font-size: var(--font-body-scale);\n      line-height: 1.6;\n    }\n    \n    \/* Nascondi controlli desktop *\/\n    .carousel > .carousel-control-prev,\n    .carousel > .carousel-control-next {\n      display: none;\n    }\n    \n    \/* Mostra controlli mobile *\/\n    .carousel-controls {\n      order: 2;\n      display: flex;\n      justify-content: center;\n      gap: 15px;\n    }\n    \n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      position: static;\n      width: 45px;\n      height: 45px;\n      font-size: 1.3rem;\n      margin: 0;\n      flex-shrink: 0;\n      display: flex;\n    }\n  }\n  \n  @media (max-width: 480px) {\n    .carousel {\n      width: 98%;\n      margin: 15px auto;\n      gap: 12px;\n    }\n    \n    .carousel-item {\n      padding: 18px 12px;\n    }\n    \n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      width: 40px;\n      height: 40px;\n      font-size: 1.2rem;\n    }\n  }\n<\/style>\n\n<script>\n  let currentIndex = 0;\n  \n  function showSlide(index) {\n    const track = document.querySelector('.carousel-track');\n    const items = document.querySelectorAll('.carousel-item');\n    const total = items.length;\n    \n    if (index >= total) currentIndex = 0;\n    else if (index < 0) currentIndex = total - 1;\n    else currentIndex = index;\n    \n    const offset = -currentIndex * 100;\n    track.style.transform = `translateX(${offset}%)`;\n  }\n  \n  function nextSlide() {\n    showSlide(currentIndex + 1);\n  }\n  \n  function prevSlide() {\n    showSlide(currentIndex - 1);\n  }\n  \n  \/\/ Auto-scroll ogni 5 secondi\n  setInterval(nextSlide, 5000);\n  \n  \/\/ Inizializza il carousel\n  document.addEventListener('DOMContentLoaded', function() {\n    showSlide(0);\n  });\n<\/script>","color_scheme":"","padding_top":40,"padding_bottom":52}},"rich_text_aaPkVq":{"type":"rich-text","blocks":{"heading_rTAc98":{"type":"heading","settings":{"heading":"Beneficio principale","heading_size":"h2"}},"text_KH89Ug":{"type":"text","settings":{"text":"<p>Descrizione beneficio<\/p>"}}},"block_order":["heading_rTAc98","text_KH89Ug"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-3","full_width":true,"padding_top":40,"padding_bottom":52}},"featured_collection":{"type":"featured-collection","settings":{"title":"Collezione","heading_size":"h2","description":"<p>Descrizione collezione<\/p>","show_description":false,"description_style":"body","collection":"all","products_to_show":8,"columns_desktop":4,"full_width":true,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"scheme-2","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":44,"padding_bottom":36}},"image_with_text_krqiTf":{"type":"image-with-text","blocks":{"heading_W6PaJa":{"type":"heading","settings":{"heading":"Storia azienda","heading_size":"h2"}},"text_6hVQej":{"type":"text","settings":{"text":"<p>Inserisci informazioni che aumentino l'autorità dell'azienda e, se possibile, che dimostrino che c'è anche una passione dietro.<\/p>","text_style":"body"}}},"block_order":["heading_W6PaJa","text_6hVQej"],"settings":{"height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-1","color_scheme":"scheme-1","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"featured_collection_inWCHi":{"type":"featured-collection","settings":{"title":"Collezione","heading_size":"h2","description":"<p>Descrizione collezione<\/p>","show_description":false,"description_style":"body","collection":"collane-donna","products_to_show":8,"columns_desktop":4,"full_width":true,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"scheme-3","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":44,"padding_bottom":36}},"multicolumn_FdtrqY":{"type":"multicolumn","blocks":{"column_TEFRnN":{"type":"column","settings":{"title":"Beneficio","text":"<p>Descrizione beneficio<\/p>","link_label":"","link":""}},"column_LNknPi":{"type":"column","settings":{"title":"Beneficio","text":"<p>Descrizione beneficio<\/p>","link_label":"","link":""}},"column_zcGzXY":{"type":"column","settings":{"title":"Beneficio","text":"<p>Descrizione beneficio<\/p>","link_label":"","link":""}}},"block_order":["column_TEFRnN","column_LNknPi","column_zcGzXY"],"settings":{"title":"Perché sceglierci","heading_size":"h2","image_width":"third","image_ratio":"adapt","columns_desktop":3,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"scheme-2","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"featured_collection_yrqqm9":{"type":"featured-collection","settings":{"title":"Collezione","heading_size":"h2","description":"<p>Descrizione collezione<\/p>","show_description":false,"description_style":"body","collection":"anelli","products_to_show":8,"columns_desktop":4,"full_width":true,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":44,"padding_bottom":36}},"image_with_text_CUHcJf":{"type":"image-with-text","blocks":{"heading_VVk9gg":{"type":"heading","settings":{"heading":"Beneficio","heading_size":"h2"}},"text_Kkgyee":{"type":"text","settings":{"text":"<p>Descrizione beneficio<\/p>","text_style":"body"}}},"block_order":["heading_VVk9gg","text_Kkgyee"],"settings":{"height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-3","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"featured_product_CtwXHB":{"type":"featured-product","blocks":{"title_WjErfq":{"type":"title","settings":{"heading_size":"h1"}},"price_GqnYBb":{"type":"price","settings":{}},"variant_picker_r7DmdR":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector_gfqady":{"type":"quantity_selector","settings":{}},"buy_buttons_VXAXKe":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"icon_with_text_PYbtB3":{"type":"icon-with-text","settings":{"layout":"vertical","icon_1":"check_mark","heading_1":"Assistenza pre e post acquisto","icon_2":"heart","heading_2":"Fatto a mano in Italia","icon_3":"truck","heading_3":"Spedizione in tutto il mondo"}}},"block_order":["title_WjErfq","price_GqnYBb","variant_picker_r7DmdR","quantity_selector_gfqady","buy_buttons_VXAXKe","icon_with_text_PYbtB3"],"settings":{"product":"addicted-bracciale-in-forma-di-serpente-eltanin","color_scheme":"scheme-2","secondary_background":false,"media_size":"medium","constrain_to_viewport":true,"media_fit":"contain","media_position":"left","image_zoom":"hover","hide_variants":false,"enable_video_looping":false,"padding_top":36,"padding_bottom":36}},"custom_liquid_gfijdL":{"type":"custom-liquid","settings":{"custom_liquid":"<style> body {overflow-x: hidden;}<\/style>","color_scheme":"","padding_top":0,"padding_bottom":0}}},"order":["image_banner","custom_liquid_QAWQkd","custom_liquid_7GJYwP","rich_text_aaPkVq","featured_collection","image_with_text_krqiTf","featured_collection_inWCHi","multicolumn_FdtrqY","featured_collection_yrqqm9","image_with_text_CUHcJf","featured_product_CtwXHB","custom_liquid_gfijdL"]}
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Abbigliamento autentico per donne fuori dagli schemi",
+            "heading_size": "h2"
+          }
+        },
+        "text_ghLyNQ": {
+          "type": "text",
+          "settings": {
+            "text": "Linee morbide, tessuti naturali, eleganza senza tempo",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Scopri i nostri capi",
+            "button_link_1": "/collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text_ghLyNQ",
+        "button"
+      ],
+      "settings": {
+        "image_overlay_opacity": 30,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "mobile_image_overlay_opacity": 30,
+        "mobile_color_scheme": "scheme-5"
+      }
+    },
+    "custom_liquid_7GJYwP": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% assign scheme = settings.color_scheme_1 %}\n\n<h2 style=\"text-align: center; color: rgb({{ scheme.text }}); font-family: var(--font-heading-family); font-size: {{ settings.type_header_font_size }}px;\">Recensioni di Google</h2>\n<p style=\"text-align: center; font-size: {{ settings.type_body_font_size }}px; color: rgba({{ scheme.text }}, 0.6); margin-top: 5px;\">5.0/5 ★★★★★ (3 recensioni)</p>\n\n<div class=\"carousel\" id=\"reviewCarousel\" style=\"\n  --color-background: {{ scheme.background }};\n  --color-foreground: {{ scheme.text }};\n  --color-accent: {{ scheme.accent }};\n\">\n  <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;</button>\n  <div class=\"carousel-inner\">\n    <!-- Inizio recensioni -->\n    <div class=\"carousel-track\">\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Virna Tagliatti</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\"></div>\n          </div>\n          <div class=\"review-text\">\n            Abbigliamento donna, accessori, borse e scarpe. Profumi. Bellissime vetrine. Stile minimalista ma raffinato. Arredamento curato. Elena gentilissima nel consigliarti. Prezzi medio alti.🤍\n          </div>\n        </div>\n      </div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Barbara Zironi</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\"></div>\n          </div>\n          <div class=\"review-text\">\n            Bellissimo negozio, splendidi capi d'abbigliamento super comodo e bellissimo. Le ragazze magiche, pazienti, gentili e disponibilissime.\n          </div>\n        </div>\n      </div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Beatrice Daniele</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\"></div>\n          </div>\n          <div class=\"review-text\">\n            ESPERIENZA: devo dire che più che un negozio di vestiti è un salotto meraviglioso con un'amica che ti segue e ti consiglia. È raro trovare una completa disponibilità.\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;</button>\n\n  <!-- Controlli mobile -->\n  <div class=\"carousel-controls\">\n    <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;</button>\n    <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;</button>\n  </div>\n</div>\n<style>\n@media (max-width: 768px) {\n  .carousel {\n   width: 90% !important;\n  }\n}\n  .carousel {\n    width: 90%;\n    max-width: 700px;\n    overflow: hidden;\n    position: relative;\n    margin: 40px auto;\n    border-radius: {{ settings.text_boxes_radius }} !important;\n    box-shadow: 0 5px 20px rgba(0,0,0,0.1);\n    background: rgb(var(--color-background));\n    border: 1px solid rgba(var(--color-foreground), 0.1);\n    font-family: var(--font-body-family);\n    display: flex;\n    align-items: center;\n  }\n\n  .carousel-inner {\n    flex: 1;\n    overflow: hidden;\n  }\n\n  .carousel-track {\n    display: flex;\n    transition: transform 0.5s ease;\n  }\n\n  .carousel-item {\n    min-width: 100%;\n    box-sizing: border-box;\n    padding: 20px;\n  }\n\n  .review-card {\n    display: flex;\n    flex-direction: column;\n    gap: 12px;\n  }\n\n  .reviewer-info {\n    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);\n    padding-bottom: 10px;\n  }\n\n  .reviewer-name {\n    font-size: var(--font-heading-scale);\n    font-weight: 600;\n    margin-bottom: 5px;\n    color: rgb(var(--color-foreground));\n    font-family: var(--font-heading-family);\n  }\n\n  .review-stars {\n    color: #FFD700;\n    font-size: var(--font-body-scale);\n    margin-bottom: 3px;\n  }\n\n  .review-date {\n    color: rgba(var(--color-foreground), 0.6);\n    font-size: var(--font-body-scale);\n  }\n\n  .review-text {\n    font-size: var(--font-body-scale);\n    color: rgb(var(--color-foreground));\n    line-height: 1.6;\n    font-style: italic;\n  }\n\n  .carousel-control-prev,\n  .carousel-control-next {\n    position: relative;\n    background-color: rgba(var(--color-accent), 0.8);\n    color: rgb(var(--color-background));\n    border: none;\n    border-radius: 50%;\n    width: 40px;\n    height: 40px;\n    cursor: pointer;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 2;\n    transition: all 0.3s ease;\n    flex-shrink: 0;\n    margin: 0 10px;\n  }\n\n  .carousel-control-prev:hover,\n  .carousel-control-next:hover {\n    background-color: rgb(var(--color-accent));\n    transform: scale(1.1);\n  }\n\n  .carousel-controls {\n    display: none;\n  }\n\n  /* Responsive */\n  @media (max-width: 768px) {\n    .carousel {\n      width: 95%;\n      margin: 20px auto;\n      flex-direction: column;\n      gap: 15px;\n      align-items: stretch;\n    }\n\n    .carousel-inner {\n      order: 1;\n      min-height: auto;\n    }\n\n    .carousel-item {\n      padding: 20px 15px;\n      min-height: auto;\n    }\n\n    .review-card {\n      width: 100%;\n    }\n\n    .reviewer-name {\n      font-size: var(--font-heading-scale);\n      margin-bottom: 8px;\n    }\n\n    .review-stars {\n      font-size: var(--font-body-scale);\n    }\n\n    .review-date {\n      font-size: var(--font-body-scale);\n    }\n\n    .review-text {\n      font-size: var(--font-body-scale);\n      line-height: 1.6;\n    }\n\n    /* Nascondi controlli desktop */\n    .carousel > .carousel-control-prev,\n    .carousel > .carousel-control-next {\n      display: none;\n    }\n\n    /* Mostra controlli mobile */\n    .carousel-controls {\n      order: 2;\n      display: flex;\n      justify-content: center;\n      gap: 15px;\n    }\n\n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      position: static;\n      width: 45px;\n      height: 45px;\n      font-size: 1.3rem;\n      margin: 0;\n      flex-shrink: 0;\n      display: flex;\n    }\n  }\n\n  @media (max-width: 480px) {\n    .carousel {\n      width: 98%;\n      margin: 15px auto;\n      gap: 12px;\n    }\n\n    .carousel-item {\n      padding: 18px 12px;\n    }\n\n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      width: 40px;\n      height: 40px;\n      font-size: 1.2rem;\n    }\n  }\n</style>\n\n<script>\n  let currentIndex = 0;\n\n  function showSlide(index) {\n    const track = document.querySelector('.carousel-track');\n    const items = document.querySelectorAll('.carousel-item');\n    const total = items.length;\n\n    if (index >= total) currentIndex = 0;\n    else if (index < 0) currentIndex = total - 1;\n    else currentIndex = index;\n\n    const offset = -currentIndex * 100;\n    track.style.transform = `translateX(${offset}%)`;\n  }\n\n  function nextSlide() {\n    showSlide(currentIndex + 1);\n  }\n\n  function prevSlide() {\n    showSlide(currentIndex - 1);\n  }\n\n  // Auto-scroll ogni 5 secondi\n  setInterval(nextSlide, 5000);\n\n  // Inizializza il carousel\n  document.addEventListener('DOMContentLoaded', function() {\n    showSlide(0);\n  });\n</script>\n",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_aaPkVq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rTAc98": {
+          "type": "heading",
+          "settings": {
+            "heading": "Indossa ciò che ti fa sentire te stessa",
+            "heading_size": "h2"
+          }
+        },
+        "text_KH89Ug": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ogni capo nasce da una scelta: libertà di stile, comfort, unicà. Entra nel nostro mondo.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rTAc98",
+        "text_KH89Ug"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Selezione Tessuti Naturali",
+        "heading_size": "h2",
+        "description": "<p>Descrizione collezione</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "tessuti-naturali",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-3",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_krqiTf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_W6PaJa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dal 2005, un negozio fatto a mano",
+            "heading_size": "h2"
+          }
+        },
+        "text_6hVQej": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mi chiamo Alessia e da vent’anni creo uno spazio dove ogni donna possa sentirsi bene, bella e libera. Non seguiamo la moda: la riscriviamo, insieme.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_W6PaJa",
+        "text_6hVQej"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_inWCHi": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Capi Comodi & Eleganti",
+        "heading_size": "h2",
+        "description": "<p>Descrizione collezione</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "capi-comodi-eleganti",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_FdtrqY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TEFRnN": {
+          "type": "column",
+          "settings": {
+            "title": "Fatto con cura",
+            "text": "<p>Ogni dettaglio è scelto a mano, ogni pacco è un gesto d’amore.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LNknPi": {
+          "type": "column",
+          "settings": {
+            "title": "Comfort assoluto",
+            "text": "<p>Nessuna taglia rigida. Capi morbidi, avvolgenti, liberatori.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zcGzXY": {
+          "type": "column",
+          "settings": {
+            "title": "Solo tessuti naturali",
+            "text": "<p>Selezioniamo fibre italiane, materiche e senza tempo.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_TEFRnN",
+        "column_LNknPi",
+        "column_zcGzXY"
+      ],
+      "settings": {
+        "title": "Perché sceglierci",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_yrqqm9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Mai uguali",
+        "heading_size": "h2",
+        "description": "<p>Descrizione collezione</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "mai-uguali",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_CUHcJf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VVk9gg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Non è moda. È relazione.",
+            "heading_size": "h2"
+          }
+        },
+        "text_Kkgyee": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Consigliamo, ascoltiamo, vestiamo. Ogni acquisto nasce da un dialogo, non da un algoritmo.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VVk9gg",
+        "text_Kkgyee"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_CtwXHB": {
+      "type": "featured-product",
+      "blocks": {
+        "title_WjErfq": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_GqnYBb": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_r7DmdR": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_gfqady": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_VXAXKe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "icon_with_text_PYbtB3": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "check_mark",
+            "heading_1": "Assistenza pre e post acquisto",
+            "icon_2": "heart",
+            "heading_2": "Fatto a mano in Italia",
+            "icon_3": "truck",
+            "heading_3": "Spedizione in tutto il mondo"
+          }
+        }
+      },
+      "block_order": [
+        "title_WjErfq",
+        "price_GqnYBb",
+        "variant_picker_r7DmdR",
+        "quantity_selector_gfqady",
+        "buy_buttons_VXAXKe",
+        "icon_with_text_PYbtB3"
+      ],
+      "settings": {
+        "product": "gilet-taglio-vivo",
+        "color_scheme": "scheme-2",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "custom_liquid_7GJYwP",
+    "rich_text_aaPkVq",
+    "featured_collection",
+    "image_with_text_krqiTf",
+    "featured_collection_inWCHi",
+    "multicolumn_FdtrqY",
+    "featured_collection_yrqqm9",
+    "image_with_text_CUHcJf",
+    "featured_product_CtwXHB"
+  ]
+}
