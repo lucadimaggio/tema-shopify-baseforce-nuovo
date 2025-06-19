@@ -6,21 +6,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Abbigliamento autentico per donne fuori dagli schemi",
+            "heading": "Scarpe selezionate per te con cura e passione",
             "heading_size": "h2"
           }
         },
         "text_ghLyNQ": {
           "type": "text",
           "settings": {
-            "text": "Linee morbide, tessuti naturali, eleganza senza tempo",
+            "text": "Consulenza diretta, qualità e uno stile che ti somiglia.",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Scopri i nostri capi",
+            "button_label_1": "Scopri prodotti",
             "button_link_1": "/collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -52,7 +52,7 @@
     "custom_liquid_7GJYwP": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% assign scheme = settings.color_scheme_1 %}\n\n<h2 style=\"text-align: center; color: rgb({{ scheme.text }}); font-family: var(--font-heading-family); font-size: {{ settings.type_header_font_size }}px;\">Recensioni di Google</h2>\n<p style=\"text-align: center; font-size: {{ settings.type_body_font_size }}px; color: rgba({{ scheme.text }}, 0.6); margin-top: 5px;\">5.0/5 ★★★★★ (3 recensioni)</p>\n\n<div class=\"carousel\" id=\"reviewCarousel\" style=\"\n  --color-background: {{ scheme.background }};\n  --color-foreground: {{ scheme.text }};\n  --color-accent: {{ scheme.accent }};\n\">\n  <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;</button>\n  <div class=\"carousel-inner\">\n    <!-- Inizio recensioni -->\n    <div class=\"carousel-track\">\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Virna Tagliatti</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\"></div>\n          </div>\n          <div class=\"review-text\">\n            Abbigliamento donna, accessori, borse e scarpe. Profumi. Bellissime vetrine. Stile minimalista ma raffinato. Arredamento curato. Elena gentilissima nel consigliarti. Prezzi medio alti.🤍\n          </div>\n        </div>\n      </div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Barbara Zironi</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\"></div>\n          </div>\n          <div class=\"review-text\">\n            Bellissimo negozio, splendidi capi d'abbigliamento super comodo e bellissimo. Le ragazze magiche, pazienti, gentili e disponibilissime.\n          </div>\n        </div>\n      </div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Beatrice Daniele</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\"></div>\n          </div>\n          <div class=\"review-text\">\n            ESPERIENZA: devo dire che più che un negozio di vestiti è un salotto meraviglioso con un'amica che ti segue e ti consiglia. È raro trovare una completa disponibilità.\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;</button>\n\n  <!-- Controlli mobile -->\n  <div class=\"carousel-controls\">\n    <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;</button>\n    <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;</button>\n  </div>\n</div>\n<style>\n@media (max-width: 768px) {\n  .carousel {\n   width: 90% !important;\n  }\n}\n  .carousel {\n    width: 90%;\n    max-width: 700px;\n    overflow: hidden;\n    position: relative;\n    margin: 40px auto;\n    border-radius: {{ settings.text_boxes_radius }} !important;\n    box-shadow: 0 5px 20px rgba(0,0,0,0.1);\n    background: rgb(var(--color-background));\n    border: 1px solid rgba(var(--color-foreground), 0.1);\n    font-family: var(--font-body-family);\n    display: flex;\n    align-items: center;\n  }\n\n  .carousel-inner {\n    flex: 1;\n    overflow: hidden;\n  }\n\n  .carousel-track {\n    display: flex;\n    transition: transform 0.5s ease;\n  }\n\n  .carousel-item {\n    min-width: 100%;\n    box-sizing: border-box;\n    padding: 20px;\n  }\n\n  .review-card {\n    display: flex;\n    flex-direction: column;\n    gap: 12px;\n  }\n\n  .reviewer-info {\n    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);\n    padding-bottom: 10px;\n  }\n\n  .reviewer-name {\n    font-size: var(--font-heading-scale);\n    font-weight: 600;\n    margin-bottom: 5px;\n    color: rgb(var(--color-foreground));\n    font-family: var(--font-heading-family);\n  }\n\n  .review-stars {\n    color: #FFD700;\n    font-size: var(--font-body-scale);\n    margin-bottom: 3px;\n  }\n\n  .review-date {\n    color: rgba(var(--color-foreground), 0.6);\n    font-size: var(--font-body-scale);\n  }\n\n  .review-text {\n    font-size: var(--font-body-scale);\n    color: rgb(var(--color-foreground));\n    line-height: 1.6;\n    font-style: italic;\n  }\n\n  .carousel-control-prev,\n  .carousel-control-next {\n    position: relative;\n    background-color: rgba(var(--color-accent), 0.8);\n    color: rgb(var(--color-background));\n    border: none;\n    border-radius: 50%;\n    width: 40px;\n    height: 40px;\n    cursor: pointer;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 2;\n    transition: all 0.3s ease;\n    flex-shrink: 0;\n    margin: 0 10px;\n  }\n\n  .carousel-control-prev:hover,\n  .carousel-control-next:hover {\n    background-color: rgb(var(--color-accent));\n    transform: scale(1.1);\n  }\n\n  .carousel-controls {\n    display: none;\n  }\n\n  /* Responsive */\n  @media (max-width: 768px) {\n    .carousel {\n      width: 95%;\n      margin: 20px auto;\n      flex-direction: column;\n      gap: 15px;\n      align-items: stretch;\n    }\n\n    .carousel-inner {\n      order: 1;\n      min-height: auto;\n    }\n\n    .carousel-item {\n      padding: 20px 15px;\n      min-height: auto;\n    }\n\n    .review-card {\n      width: 100%;\n    }\n\n    .reviewer-name {\n      font-size: var(--font-heading-scale);\n      margin-bottom: 8px;\n    }\n\n    .review-stars {\n      font-size: var(--font-body-scale);\n    }\n\n    .review-date {\n      font-size: var(--font-body-scale);\n    }\n\n    .review-text {\n      font-size: var(--font-body-scale);\n      line-height: 1.6;\n    }\n\n    /* Nascondi controlli desktop */\n    .carousel > .carousel-control-prev,\n    .carousel > .carousel-control-next {\n      display: none;\n    }\n\n    /* Mostra controlli mobile */\n    .carousel-controls {\n      order: 2;\n      display: flex;\n      justify-content: center;\n      gap: 15px;\n    }\n\n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      position: static;\n      width: 45px;\n      height: 45px;\n      font-size: 1.3rem;\n      margin: 0;\n      flex-shrink: 0;\n      display: flex;\n    }\n  }\n\n  @media (max-width: 480px) {\n    .carousel {\n      width: 98%;\n      margin: 15px auto;\n      gap: 12px;\n    }\n\n    .carousel-item {\n      padding: 18px 12px;\n    }\n\n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      width: 40px;\n      height: 40px;\n      font-size: 1.2rem;\n    }\n  }\n</style>\n\n<script>\n  let currentIndex = 0;\n\n  function showSlide(index) {\n    const track = document.querySelector('.carousel-track');\n    const items = document.querySelectorAll('.carousel-item');\n    const total = items.length;\n\n    if (index >= total) currentIndex = 0;\n    else if (index < 0) currentIndex = total - 1;\n    else currentIndex = index;\n\n    const offset = -currentIndex * 100;\n    track.style.transform = `translateX(${offset}%)`;\n  }\n\n  function nextSlide() {\n    showSlide(currentIndex + 1);\n  }\n\n  function prevSlide() {\n    showSlide(currentIndex - 1);\n  }\n\n  // Auto-scroll ogni 5 secondi\n  setInterval(nextSlide, 5000);\n\n  // Inizializza il carousel\n  document.addEventListener('DOMContentLoaded', function() {\n    showSlide(0);\n  });\n</script>\n",
+        "custom_liquid": "{% assign scheme = settings.color_scheme_1 %}\n\n<h2 style=\"text-align: center; color: rgb({{ scheme.text }}); font-family: var(--font-heading-family); font-size: {{ settings.type_header_font_size }}px;\">Recensioni di Google</h2>\n<p style=\"text-align: center; font-size: {{ settings.type_body_font_size }}px; color: rgba({{ scheme.text }}, 0.6); margin-top: 5px;\">4.9/5 ★★★★★ (36 recensioni)</p>\n\n<div class=\"carousel\" id=\"reviewCarousel\" style=\"\n  --color-background: {{ scheme.background }};\n  --color-foreground: {{ scheme.text }};\n  --color-accent: {{ scheme.accent }};\n\">\n  <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;</button>\n  <div class=\"carousel-inner\">\n    <!-- Inizio recensioni -->\n    <div class=\"carousel-track\">\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Angela Reggidori</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\"></div>\n          </div>\n          <div class=\"review-text\">\n              Esperienza super positiva. Ottimi prodotti, personale competente e disponibile.\n          </div>\n        </div>\n      </div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Anna Simonetti</h1>\n            <div class=\"review-stars\">★★★★★</div>\n            <div class=\"review-date\"></div>\n          </div>\n          <div class=\"review-text\">\n              Emanuela ti segue con gentilezza e ti consiglia con cura. Scarpe comode e belle!\n          </div>\n        </div>\n      </div>\n      <div class=\"carousel-item\">\n        <div class=\"review-card\">\n          <div class=\"reviewer-info\">\n            <h1 class=\"reviewer-name\">Chiara T.</h1>\n            <div class=\"review-stars\">★★★★☆</div>\n            <div class=\"review-date\"></div>\n          </div>\n          <div class=\"review-text\">\n              Servizio attento e cortese. Molto soddisfatta degli acquisti!\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;</button>\n\n  <!-- Controlli mobile -->\n  <div class=\"carousel-controls\">\n    <button class=\"carousel-control-prev\" onclick=\"prevSlide()\">&#10094;</button>\n    <button class=\"carousel-control-next\" onclick=\"nextSlide()\">&#10095;</button>\n  </div>\n</div>\n<style>\n@media (max-width: 768px) {\n  .carousel {\n   width: 90% !important;\n  }\n}\n  .carousel {\n    width: 90%;\n    max-width: 700px;\n    overflow: hidden;\n    position: relative;\n    margin: 40px auto;\n    border-radius: {{ settings.text_boxes_radius }} !important;\n    box-shadow: 0 5px 20px rgba(0,0,0,0.1);\n    background: rgb(var(--color-background));\n    border: 1px solid rgba(var(--color-foreground), 0.1);\n    font-family: var(--font-body-family);\n    display: flex;\n    align-items: center;\n  }\n\n  .carousel-inner {\n    flex: 1;\n    overflow: hidden;\n  }\n\n  .carousel-track {\n    display: flex;\n    transition: transform 0.5s ease;\n  }\n\n  .carousel-item {\n    min-width: 100%;\n    box-sizing: border-box;\n    padding: 20px;\n  }\n\n  .review-card {\n    display: flex;\n    flex-direction: column;\n    gap: 12px;\n  }\n\n  .reviewer-info {\n    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);\n    padding-bottom: 10px;\n  }\n\n  .reviewer-name {\n    font-size: var(--font-heading-scale);\n    font-weight: 600;\n    margin-bottom: 5px;\n    color: rgb(var(--color-foreground));\n    font-family: var(--font-heading-family);\n  }\n\n  .review-stars {\n    color: #FFD700;\n    font-size: var(--font-body-scale);\n    margin-bottom: 3px;\n  }\n\n  .review-date {\n    color: rgba(var(--color-foreground), 0.6);\n    font-size: var(--font-body-scale);\n  }\n\n  .review-text {\n    font-size: var(--font-body-scale);\n    color: rgb(var(--color-foreground));\n    line-height: 1.6;\n    font-style: italic;\n  }\n\n  .carousel-control-prev,\n  .carousel-control-next {\n    position: relative;\n    background-color: rgba(var(--color-accent), 0.8);\n    color: rgb(var(--color-background));\n    border: none;\n    border-radius: 50%;\n    width: 40px;\n    height: 40px;\n    cursor: pointer;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 2;\n    transition: all 0.3s ease;\n    flex-shrink: 0;\n    margin: 0 10px;\n  }\n\n  .carousel-control-prev:hover,\n  .carousel-control-next:hover {\n    background-color: rgb(var(--color-accent));\n    transform: scale(1.1);\n  }\n\n  .carousel-controls {\n    display: none;\n  }\n\n  /* Responsive */\n  @media (max-width: 768px) {\n    .carousel {\n      width: 95%;\n      margin: 20px auto;\n      flex-direction: column;\n      gap: 15px;\n      align-items: stretch;\n    }\n\n    .carousel-inner {\n      order: 1;\n      min-height: auto;\n    }\n\n    .carousel-item {\n      padding: 20px 15px;\n      min-height: auto;\n    }\n\n    .review-card {\n      width: 100%;\n    }\n\n    .reviewer-name {\n      font-size: var(--font-heading-scale);\n      margin-bottom: 8px;\n    }\n\n    .review-stars {\n      font-size: var(--font-body-scale);\n    }\n\n    .review-date {\n      font-size: var(--font-body-scale);\n    }\n\n    .review-text {\n      font-size: var(--font-body-scale);\n      line-height: 1.6;\n    }\n\n    /* Nascondi controlli desktop */\n    .carousel > .carousel-control-prev,\n    .carousel > .carousel-control-next {\n      display: none;\n    }\n\n    /* Mostra controlli mobile */\n    .carousel-controls {\n      order: 2;\n      display: flex;\n      justify-content: center;\n      gap: 15px;\n    }\n\n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      position: static;\n      width: 45px;\n      height: 45px;\n      font-size: 1.3rem;\n      margin: 0;\n      flex-shrink: 0;\n      display: flex;\n    }\n  }\n\n  @media (max-width: 480px) {\n    .carousel {\n      width: 98%;\n      margin: 15px auto;\n      gap: 12px;\n    }\n\n    .carousel-item {\n      padding: 18px 12px;\n    }\n\n    .carousel-controls .carousel-control-prev,\n    .carousel-controls .carousel-control-next {\n      width: 40px;\n      height: 40px;\n      font-size: 1.2rem;\n    }\n  }\n</style>\n\n<script>\n  let currentIndex = 0;\n\n  function showSlide(index) {\n    const track = document.querySelector('.carousel-track');\n    const items = document.querySelectorAll('.carousel-item');\n    const total = items.length;\n\n    if (index >= total) currentIndex = 0;\n    else if (index < 0) currentIndex = total - 1;\n    else currentIndex = index;\n\n    const offset = -currentIndex * 100;\n    track.style.transform = `translateX(${offset}%)`;\n  }\n\n  function nextSlide() {\n    showSlide(currentIndex + 1);\n  }\n\n  function prevSlide() {\n    showSlide(currentIndex - 1);\n  }\n\n  // Auto-scroll ogni 5 secondi\n  setInterval(nextSlide, 5000);\n\n  // Inizializza il carousel\n  document.addEventListener('DOMContentLoaded', function() {\n    showSlide(0);\n  });\n</script>\n\n",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -64,14 +64,14 @@
         "heading_rTAc98": {
           "type": "heading",
           "settings": {
-            "heading": "Indossa ciò che ti fa sentire te stessa",
+            "heading": "Più che scarpe, un’esperienza",
             "heading_size": "h2"
           }
         },
         "text_KH89Ug": {
           "type": "text",
           "settings": {
-            "text": "<p>Ogni capo nasce da una scelta: libertà di stile, comfort, unicà. Entra nel nostro mondo.</p>"
+            "text": "<p>Scopri una selezione pensata per farti sentire comoda e valorizzata ogni giorno, con il supporto diretto di Emanuela.</p>"
           }
         }
       },
@@ -91,19 +91,19 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Selezione Tessuti Naturali",
+        "title": "Nuovi Arrivi",
         "heading_size": "h2",
         "description": "<p>Descrizione collezione</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "tessuti-naturali",
+        "collection": "nuovi-arrivi",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -122,14 +122,14 @@
         "heading_W6PaJa": {
           "type": "heading",
           "settings": {
-            "heading": "Dal 2005, un negozio fatto a mano",
+            "heading": "Una storia che parte dal cuore di Imola",
             "heading_size": "h2"
           }
         },
         "text_6hVQej": {
           "type": "text",
           "settings": {
-            "text": "<p>Mi chiamo Alessia e da vent’anni creo uno spazio dove ogni donna possa sentirsi bene, bella e libera. Non seguiamo la moda: la riscriviamo, insieme.</p>",
+            "text": "<p>Dal 2000 accogliamo le clienti con il sorriso, aiutandole a trovare la scarpa giusta per ogni occasione. Ogni stagione, una nuova selezione pensata per te.</p>",
             "text_style": "body"
           }
         }
@@ -146,7 +146,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -156,19 +156,19 @@
     "featured_collection_inWCHi": {
       "type": "featured-collection",
       "settings": {
-        "title": "Capi Comodi & Eleganti",
+        "title": "Le nostre preferite",
         "heading_size": "h2",
         "description": "<p>Descrizione collezione</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "capi-comodi-eleganti",
+        "collection": "preferiti-di-emanuela",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -187,8 +187,8 @@
         "column_TEFRnN": {
           "type": "column",
           "settings": {
-            "title": "Fatto con cura",
-            "text": "<p>Ogni dettaglio è scelto a mano, ogni pacco è un gesto d’amore.</p>",
+            "title": "Consulenza personalizzata",
+            "text": "<p>Ogni scarpa viene scelta con te, per te.</p>",
             "link_label": "",
             "link": ""
           }
@@ -196,8 +196,8 @@
         "column_LNknPi": {
           "type": "column",
           "settings": {
-            "title": "Comfort assoluto",
-            "text": "<p>Nessuna taglia rigida. Capi morbidi, avvolgenti, liberatori.</p>",
+            "title": "Contatto diretto",
+            "text": "<p>Scrivi su WhatsApp: ti risponde Emanuela, non un bot.</p>",
             "link_label": "",
             "link": ""
           }
@@ -205,8 +205,8 @@
         "column_zcGzXY": {
           "type": "column",
           "settings": {
-            "title": "Solo tessuti naturali",
-            "text": "<p>Selezioniamo fibre italiane, materiche e senza tempo.</p>",
+            "title": "Spedizione veloce",
+            "text": "<p>Ricevi il tuo ordine in 24/48h, con aggiornamenti in tempo reale.</p>",
             "link_label": "",
             "link": ""
           }
@@ -227,7 +227,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -237,12 +237,12 @@
     "featured_collection_yrqqm9": {
       "type": "featured-collection",
       "settings": {
-        "title": "Mai uguali",
+        "title": "Comode e alla moda",
         "heading_size": "h2",
         "description": "<p>Descrizione collezione</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "mai-uguali",
+        "collection": "comfort-e-stile",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": true,
@@ -268,14 +268,14 @@
         "heading_VVk9gg": {
           "type": "heading",
           "settings": {
-            "heading": "Non è moda. È relazione.",
+            "heading": "Ti seguiamo passo dopo passo",
             "heading_size": "h2"
           }
         },
         "text_Kkgyee": {
           "type": "text",
           "settings": {
-            "text": "<p>Consigliamo, ascoltiamo, vestiamo. Ogni acquisto nasce da un dialogo, non da un algoritmo.</p>",
+            "text": "<p>Dal consiglio iniziale alla consegna: ti accompagniamo in ogni fase, con attenzione e professionalità.</p>",
             "text_style": "body"
           }
         }
@@ -352,8 +352,8 @@
         "icon_with_text_PYbtB3"
       ],
       "settings": {
-        "product": "gilet-taglio-vivo",
-        "color_scheme": "scheme-2",
+        "product": "mocassino-cuoio-soft",
+        "color_scheme": "scheme-1",
         "secondary_background": false,
         "media_size": "medium",
         "constrain_to_viewport": true,
